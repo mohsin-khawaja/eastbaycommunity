@@ -69,7 +69,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-gradient-to-r from-green-500 to-blue-600 rounded-full flex items-center justify-center">
+            <div className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center">
               <span className="text-white font-bold text-lg">EB</span>
             </div>
             <span className="font-bold text-xl text-gray-800">East Bay Muslims</span>
@@ -81,7 +81,7 @@ const Navbar = () => {
               <div key={item.title} className="relative group">
                 <button
                   onClick={() => toggleDropdown(item.title)}
-                  className="flex items-center space-x-1 text-gray-700 hover:text-green-600 px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                  className="flex items-center space-x-1 text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium transition-colors"
                 >
                   <span>{item.title}</span>
                   <ChevronDownIcon className="w-4 h-4" />
@@ -93,7 +93,7 @@ const Navbar = () => {
                       <Link
                         key={subItem.title}
                         href={subItem.href}
-                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-green-600"
+                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
                         onClick={() => setActiveDropdown(null)}
                       >
                         {subItem.title}
@@ -106,9 +106,9 @@ const Navbar = () => {
             
             {/* Language Toggle */}
             <div className="flex items-center space-x-2 border-l border-gray-300 pl-4">
-              <button className="text-sm text-gray-700 hover:text-green-600">English</button>
+              <button className="text-sm text-gray-700 hover:text-gray-900">English</button>
               <span className="text-gray-400">|</span>
-              <button className="text-sm text-gray-700 hover:text-green-600">اردو</button>
+              <button className="text-sm text-gray-700 hover:text-gray-900">اردو</button>
             </div>
           </div>
 
@@ -116,7 +116,7 @@ const Navbar = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-gray-700 hover:text-green-600 focus:outline-none focus:text-green-600"
+              className="text-gray-700 hover:text-gray-900 focus:outline-none focus:text-gray-900"
             >
               {isOpen ? (
                 <XMarkIcon className="h-6 w-6" />
@@ -136,7 +136,7 @@ const Navbar = () => {
               <div key={item.title}>
                 <button
                   onClick={() => toggleDropdown(item.title)}
-                  className="w-full text-left flex items-center justify-between px-3 py-2 text-gray-700 hover:text-green-600 hover:bg-gray-50 rounded-md text-base font-medium"
+                  className="w-full text-left flex items-center justify-between px-3 py-2 text-gray-700 hover:text-gray-900 hover:bg-gray-50 rounded-md text-base font-medium"
                 >
                   {item.title}
                   <ChevronDownIcon className="w-4 h-4" />
@@ -148,7 +148,7 @@ const Navbar = () => {
                       <Link
                         key={subItem.title}
                         href={subItem.href}
-                        className="block px-3 py-2 text-sm text-gray-600 hover:text-green-600 hover:bg-gray-50 rounded-md"
+                        className="block px-3 py-2 text-sm text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-md"
                         onClick={() => {
                           setIsOpen(false);
                           setActiveDropdown(null);
@@ -164,9 +164,9 @@ const Navbar = () => {
             
             {/* Mobile Language Toggle */}
             <div className="flex items-center space-x-2 px-3 py-2 border-t border-gray-200 mt-2">
-              <button className="text-sm text-gray-700 hover:text-green-600">English</button>
+              <button className="text-sm text-gray-700 hover:text-gray-900">English</button>
               <span className="text-gray-400">|</span>
-              <button className="text-sm text-gray-700 hover:text-green-600">اردو</button>
+              <button className="text-sm text-gray-700 hover:text-gray-900">اردو</button>
             </div>
           </div>
         </div>

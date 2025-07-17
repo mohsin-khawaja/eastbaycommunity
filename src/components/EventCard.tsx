@@ -20,16 +20,16 @@ const EventCard: React.FC<EventCardProps> = ({
   featured = false
 }) => {
   return (
-    <div className={`bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 ${featured ? 'ring-2 ring-green-500' : ''}`}>
+    <div className={`bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 ${featured ? 'ring-2 ring-gray-800' : ''}`}>
       {image && (
-        <div className="h-48 bg-gradient-to-r from-green-400 to-blue-500 flex items-center justify-center">
+                  <div className="h-48 bg-gray-300 flex items-center justify-center">
           <span className="text-white text-6xl">🎉</span>
         </div>
       )}
       
       <div className="p-6">
         {featured && (
-          <div className="inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full mb-2">
+          <div className="inline-block bg-gray-200 text-gray-800 text-xs px-2 py-1 rounded-full mb-2">
             Featured Event
           </div>
         )}
@@ -53,10 +53,10 @@ const EventCard: React.FC<EventCardProps> = ({
         </div>
         
         <div className="mt-4 flex space-x-2">
-          <button className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded text-sm font-medium transition-colors">
+          <button className="bg-gray-800 hover:bg-black text-white px-4 py-2 rounded text-sm font-medium transition-colors">
             Learn More
           </button>
-          <button className="border border-green-600 text-green-600 hover:bg-green-50 px-4 py-2 rounded text-sm font-medium transition-colors">
+          <button className="border border-gray-800 text-gray-800 hover:bg-gray-100 px-4 py-2 rounded text-sm font-medium transition-colors">
             Register
           </button>
         </div>

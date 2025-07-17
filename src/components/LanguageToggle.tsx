@@ -20,14 +20,14 @@ const LanguageToggle: React.FC<LanguageToggleProps> = ({ className = '' }) => {
       <div className="relative">
         <button
           onClick={toggleLanguage}
-          className="bg-white border border-gray-300 rounded-full px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 transition-colors"
+          className="bg-white border border-gray-300 rounded-full px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 transition-colors"
         >
           <span className="flex items-center space-x-2">
-            <span className={currentLanguage === 'en' ? 'text-green-600 font-semibold' : 'text-gray-500'}>
+            <span className={currentLanguage === 'en' ? 'text-gray-900 font-semibold' : 'text-gray-500'}>
               English
             </span>
             <span className="text-gray-400">|</span>
-            <span className={currentLanguage === 'ur' ? 'text-green-600 font-semibold' : 'text-gray-500'}>
+            <span className={currentLanguage === 'ur' ? 'text-gray-900 font-semibold' : 'text-gray-500'}>
               اردو
             </span>
           </span>

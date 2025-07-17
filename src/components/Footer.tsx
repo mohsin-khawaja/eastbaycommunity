@@ -11,7 +11,7 @@ const Footer = () => {
           {/* Organization Info */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <div className="w-10 h-10 bg-gradient-to-r from-green-500 to-blue-600 rounded-full flex items-center justify-center">
+              <div className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center">
                 <span className="text-white font-bold text-lg">EB</span>
               </div>
               <span className="font-bold text-xl">East Bay Muslims</span>
@@ -21,15 +21,15 @@ const Footer = () => {
             </p>
             <div className="space-y-2">
               <div className="flex items-center space-x-2">
-                <MapPinIcon className="w-5 h-5 text-green-400" />
+                <MapPinIcon className="w-5 h-5 text-gray-400" />
                 <span className="text-sm text-gray-300">East Bay Area, California</span>
               </div>
               <div className="flex items-center space-x-2">
-                <EnvelopeIcon className="w-5 h-5 text-green-400" />
+                <EnvelopeIcon className="w-5 h-5 text-gray-400" />
                 <span className="text-sm text-gray-300">info@eastbaymuslims.org</span>
               </div>
               <div className="flex items-center space-x-2">
-                <PhoneIcon className="w-5 h-5 text-green-400" />
+                <PhoneIcon className="w-5 h-5 text-gray-400" />
                 <span className="text-sm text-gray-300">(510)-734-2458</span>
               </div>
             </div>
@@ -40,27 +40,27 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/events" className="text-gray-300 hover:text-green-400 transition-colors">
+                <Link href="/events" className="text-gray-300 hover:text-white transition-colors">
                   Upcoming Events
                 </Link>
               </li>
               <li>
-                <Link href="/register" className="text-gray-300 hover:text-green-400 transition-colors">
+                <Link href="/register" className="text-gray-300 hover:text-white transition-colors">
                   Register for Events
                 </Link>
               </li>
               <li>
-                <Link href="/volunteer" className="text-gray-300 hover:text-green-400 transition-colors">
+                <Link href="/volunteer" className="text-gray-300 hover:text-white transition-colors">
                   Volunteer
                 </Link>
               </li>
               <li>
-                <Link href="/feedback" className="text-gray-300 hover:text-green-400 transition-colors">
+                <Link href="/feedback" className="text-gray-300 hover:text-white transition-colors">
                   Feedback
                 </Link>
               </li>
               <li>
-                <Link href="/about" className="text-gray-300 hover:text-green-400 transition-colors">
+                <Link href="/about" className="text-gray-300 hover:text-white transition-colors">
                   About Us
                 </Link>
               </li>
@@ -76,25 +76,25 @@ const Footer = () => {
                 <div className="flex flex-wrap gap-2">
                   <a
                     href="#"
-                    className="bg-blue-600 hover:bg-blue-700 px-3 py-1 rounded text-sm transition-colors"
+                    className="bg-gray-700 hover:bg-gray-800 px-3 py-1 rounded text-sm transition-colors"
                   >
                     💳 PayPal
                   </a>
                   <a
                     href="#"
-                    className="bg-purple-600 hover:bg-purple-700 px-3 py-1 rounded text-sm transition-colors"
+                    className="bg-gray-700 hover:bg-gray-800 px-3 py-1 rounded text-sm transition-colors"
                   >
                     📱 Zelle
                   </a>
                   <a
                     href="#"
-                    className="bg-blue-500 hover:bg-blue-600 px-3 py-1 rounded text-sm transition-colors"
+                    className="bg-gray-700 hover:bg-gray-800 px-3 py-1 rounded text-sm transition-colors"
                   >
                     💰 Venmo
                   </a>
                   <a
                     href="#"
-                    className="bg-indigo-600 hover:bg-indigo-700 px-3 py-1 rounded text-sm transition-colors"
+                    className="bg-gray-700 hover:bg-gray-800 px-3 py-1 rounded text-sm transition-colors"
                   >
                     🏦 Stripe
                   </a>
@@ -103,7 +103,7 @@ const Footer = () => {
               <div className="pt-4">
                 <Link
                   href="/about/donate"
-                  className="inline-block bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded font-medium transition-colors"
+                  className="inline-block bg-gray-800 hover:bg-black text-white px-4 py-2 rounded font-medium transition-colors"
                 >
                   Donate Now
                 </Link>
@@ -116,16 +116,16 @@ const Footer = () => {
         <div className="border-t border-gray-700 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex space-x-6 mb-4 md:mb-0">
-              <a href="#" className="text-gray-300 hover:text-green-400 transition-colors">
+              <a href="#" className="text-gray-300 hover:text-white transition-colors">
                 📘 Facebook
               </a>
-              <a href="#" className="text-gray-300 hover:text-green-400 transition-colors">
+              <a href="#" className="text-gray-300 hover:text-white transition-colors">
                 📸 Instagram
               </a>
-              <a href="#" className="text-gray-300 hover:text-green-400 transition-colors">
+              <a href="#" className="text-gray-300 hover:text-white transition-colors">
                 🐦 Twitter
               </a>
-              <a href="#" className="text-gray-300 hover:text-green-400 transition-colors">
+              <a href="#" className="text-gray-300 hover:text-white transition-colors">
                 📺 YouTube
               </a>
             </div>
