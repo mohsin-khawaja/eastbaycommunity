@@ -59,25 +59,25 @@ export default function EventsPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-green-600 to-blue-600 text-white py-16">
+      <section className="bg-gray-900 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
               Community Events
             </h1>
-            <p className="text-xl text-green-100 mb-8 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
               Join us for exciting festivals, cultural celebrations, and community gatherings throughout the year. All events are family-friendly and open to everyone.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/register"
-                className="bg-white text-green-600 hover:bg-green-50 px-8 py-3 rounded-lg font-medium transition-colors"
+                className="bg-white text-gray-900 hover:bg-gray-100 px-8 py-3 rounded-lg font-medium transition-colors"
               >
                 Register for Events
               </Link>
               <Link
                 href="/events/calendar"
-                className="bg-green-500 hover:bg-green-400 text-white px-8 py-3 rounded-lg font-medium transition-colors"
+                className="bg-gray-700 hover:bg-gray-600 text-white px-8 py-3 rounded-lg font-medium transition-colors"
               >
                 View Calendar
               </Link>
@@ -95,48 +95,48 @@ export default function EventsPage() {
           </div>
           
           <div className="max-w-4xl mx-auto">
-            <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-xl p-8 border-2 border-green-200">
+            <div className="bg-gray-50 rounded-xl p-8 border-2 border-gray-300">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                 <div>
-                  <div className="inline-block bg-green-100 text-green-800 text-sm px-3 py-1 rounded-full mb-4">
+                  <div className="inline-block bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-full mb-4">
                     Featured Event
                   </div>
                   <h3 className="text-3xl font-bold text-gray-800 mb-4">{featuredEvent.title}</h3>
                   <p className="text-gray-600 mb-6">{featuredEvent.description}</p>
                   
-                  <div className="space-y-3 mb-6">
-                    <div className="flex items-center text-gray-700">
-                      <CalendarDaysIcon className="w-5 h-5 mr-3 text-green-600" />
-                      <span className="font-medium">{featuredEvent.date}</span>
+                                      <div className="space-y-3 mb-6">
+                      <div className="flex items-center text-gray-700">
+                        <CalendarDaysIcon className="w-5 h-5 mr-3 text-gray-600" />
+                        <span className="font-medium">{featuredEvent.date}</span>
+                      </div>
+                      <div className="flex items-center text-gray-700">
+                        <ClockIcon className="w-5 h-5 mr-3 text-gray-600" />
+                        <span className="font-medium">{featuredEvent.time}</span>
+                      </div>
+                      <div className="flex items-center text-gray-700">
+                        <MapPinIcon className="w-5 h-5 mr-3 text-gray-600" />
+                        <span className="font-medium">{featuredEvent.location}</span>
+                      </div>
                     </div>
-                    <div className="flex items-center text-gray-700">
-                      <ClockIcon className="w-5 h-5 mr-3 text-blue-600" />
-                      <span className="font-medium">{featuredEvent.time}</span>
-                    </div>
-                    <div className="flex items-center text-gray-700">
-                      <MapPinIcon className="w-5 h-5 mr-3 text-purple-600" />
-                      <span className="font-medium">{featuredEvent.location}</span>
-                    </div>
-                  </div>
                   
-                  <div className="flex flex-col sm:flex-row gap-3">
-                    <Link
-                      href="/register"
-                      className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-medium transition-colors text-center"
-                    >
-                      Register Now
-                    </Link>
-                    <Link
-                      href="/events/performers"
-                      className="border border-green-600 text-green-600 hover:bg-green-50 px-6 py-3 rounded-lg font-medium transition-colors text-center"
-                    >
-                      View Performers
-                    </Link>
-                  </div>
+                                      <div className="flex flex-col sm:flex-row gap-3">
+                      <Link
+                        href="/register"
+                        className="bg-gray-800 hover:bg-black text-white px-6 py-3 rounded-lg font-medium transition-colors text-center"
+                      >
+                        Register Now
+                      </Link>
+                      <Link
+                        href="/events/performers"
+                        className="border border-gray-800 text-gray-800 hover:bg-gray-100 px-6 py-3 rounded-lg font-medium transition-colors text-center"
+                      >
+                        View Performers
+                      </Link>
+                    </div>
                 </div>
                 
                 <div className="order-first lg:order-last">
-                  <div className="h-64 bg-gradient-to-r from-green-400 to-blue-500 rounded-lg flex items-center justify-center">
+                  <div className="h-64 bg-gray-300 rounded-lg flex items-center justify-center">
                     <span className="text-white text-6xl">🎉</span>
                   </div>
                 </div>
@@ -173,10 +173,10 @@ export default function EventsPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <Link
               href="/events/calendar"
-              className="bg-green-50 hover:bg-green-100 border border-green-200 rounded-lg p-6 transition-colors group"
+              className="bg-gray-50 hover:bg-gray-100 border border-gray-200 rounded-lg p-6 transition-colors group"
             >
               <div className="text-center">
-                <CalendarDaysIcon className="w-12 h-12 text-green-600 mx-auto mb-4 group-hover:scale-110 transition-transform" />
+                <CalendarDaysIcon className="w-12 h-12 text-gray-700 mx-auto mb-4 group-hover:scale-110 transition-transform" />
                 <h3 className="text-lg font-semibold text-gray-800 mb-2">🎉 Event Calendar</h3>
                 <p className="text-gray-600 text-sm">View all upcoming events in calendar format</p>
               </div>
@@ -184,10 +184,10 @@ export default function EventsPage() {
             
             <Link
               href="/events/locations"
-              className="bg-blue-50 hover:bg-blue-100 border border-blue-200 rounded-lg p-6 transition-colors group"
+              className="bg-gray-50 hover:bg-gray-100 border border-gray-200 rounded-lg p-6 transition-colors group"
             >
               <div className="text-center">
-                <MapPinIcon className="w-12 h-12 text-blue-600 mx-auto mb-4 group-hover:scale-110 transition-transform" />
+                <MapPinIcon className="w-12 h-12 text-gray-700 mx-auto mb-4 group-hover:scale-110 transition-transform" />
                 <h3 className="text-lg font-semibold text-gray-800 mb-2">📍 Locations & Parking</h3>
                 <p className="text-gray-600 text-sm">Find event venues and parking information</p>
               </div>
@@ -195,10 +195,10 @@ export default function EventsPage() {
             
             <Link
               href="/events/performers"
-              className="bg-purple-50 hover:bg-purple-100 border border-purple-200 rounded-lg p-6 transition-colors group"
+              className="bg-gray-50 hover:bg-gray-100 border border-gray-200 rounded-lg p-6 transition-colors group"
             >
               <div className="text-center">
-                <UsersIcon className="w-12 h-12 text-purple-600 mx-auto mb-4 group-hover:scale-110 transition-transform" />
+                <UsersIcon className="w-12 h-12 text-gray-700 mx-auto mb-4 group-hover:scale-110 transition-transform" />
                 <h3 className="text-lg font-semibold text-gray-800 mb-2">🎤 Performers</h3>
                 <p className="text-gray-600 text-sm">Meet the talented artists and performers</p>
               </div>
@@ -206,11 +206,11 @@ export default function EventsPage() {
             
             <Link
               href="/events/gallery"
-              className="bg-pink-50 hover:bg-pink-100 border border-pink-200 rounded-lg p-6 transition-colors group"
+              className="bg-gray-50 hover:bg-gray-100 border border-gray-200 rounded-lg p-6 transition-colors group"
             >
               <div className="text-center">
                 <div className="w-12 h-12 mx-auto mb-4 group-hover:scale-110 transition-transform flex items-center justify-center">
-                  <span className="text-pink-600 text-2xl">📸</span>
+                  <span className="text-gray-700 text-2xl">📸</span>
                 </div>
                 <h3 className="text-lg font-semibold text-gray-800 mb-2">📸 Event Gallery</h3>
                 <p className="text-gray-600 text-sm">Browse photos from past events</p>
@@ -221,28 +221,28 @@ export default function EventsPage() {
       </section>
 
       {/* Call to Action */}
-      <section className="py-16 bg-gradient-to-r from-green-600 to-blue-600 text-white">
+      <section className="py-16 bg-gray-900 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold mb-6">Ready to Join Us?</h2>
-          <p className="text-lg mb-8 text-green-100">
+          <p className="text-lg mb-8 text-gray-300">
             Register for upcoming events, volunteer to help, or become a vendor at our festivals. There&apos;s a place for everyone in our community!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/register"
-              className="bg-white text-green-600 hover:bg-green-50 px-8 py-3 rounded-lg font-medium transition-colors"
+              className="bg-white text-gray-900 hover:bg-gray-100 px-8 py-3 rounded-lg font-medium transition-colors"
             >
               Register for Events
             </Link>
             <Link
               href="/volunteer"
-              className="bg-green-500 hover:bg-green-400 text-white px-8 py-3 rounded-lg font-medium transition-colors"
+              className="bg-gray-700 hover:bg-gray-600 text-white px-8 py-3 rounded-lg font-medium transition-colors"
             >
               Volunteer with Us
             </Link>
             <Link
               href="/register/vendor"
-              className="bg-transparent border-2 border-white hover:bg-white hover:text-green-600 text-white px-8 py-3 rounded-lg font-medium transition-colors"
+              className="bg-transparent border-2 border-white hover:bg-white hover:text-gray-900 text-white px-8 py-3 rounded-lg font-medium transition-colors"
             >
               Become a Vendor
             </Link>
