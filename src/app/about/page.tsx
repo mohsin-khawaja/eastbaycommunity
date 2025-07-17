@@ -200,7 +200,7 @@ export default function AboutPage() {
                   <PhoneIcon className="w-5 h-5 text-purple-600 mr-3" />
                   <div>
                     <p className="font-medium text-gray-800">Phone</p>
-                    <p className="text-gray-600">(510) 555-0123</p>
+                    <p className="text-gray-600">(510)-734-2458</p>
                   </div>
                 </div>
               </div>

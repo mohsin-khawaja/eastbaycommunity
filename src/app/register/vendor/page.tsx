@@ -253,7 +253,7 @@ export default function VendorRegistrationPage() {
             </div>
             <div className="bg-white bg-opacity-10 rounded-lg p-6">
               <h3 className="font-semibold mb-2">📞 Phone</h3>
-              <p className="text-green-100">(510) 555-0123</p>
+              <p className="text-green-100">(510)-734-2458</p>
             </div>
             <div className="bg-white bg-opacity-10 rounded-lg p-6">
               <h3 className="font-semibold mb-2">💬 WhatsApp</h3>

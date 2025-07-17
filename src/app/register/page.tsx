@@ -234,7 +234,7 @@ export default function RegisterPage() {
             </div>
             <div className="bg-gray-50 rounded-lg p-6">
               <h3 className="font-semibold text-gray-800 mb-2">📞 Phone</h3>
-              <p className="text-gray-600">(510) 555-0123</p>
+              <p className="text-gray-600">(510)-734-2458</p>
             </div>
             <div className="bg-gray-50 rounded-lg p-6">
               <h3 className="font-semibold text-gray-800 mb-2">💬 WhatsApp</h3>
