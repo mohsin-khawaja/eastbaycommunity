@@ -33,7 +33,7 @@ export default function FeedbackPage() {
                 <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                   <ChatBubbleOvalLeftIcon className="w-8 h-8 text-blue-600" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-800 mb-3">📝 Event Feedback</h3>
+                <h3 className="text-xl font-bold text-gray-800 mb-3">Event Feedback</h3>
                 <p className="text-gray-600 mb-6 text-sm">
                   Share your thoughts on recent events, what you enjoyed, and suggestions for improvement.
                 </p>
@@ -52,7 +52,7 @@ export default function FeedbackPage() {
                 <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
                   <PaperAirplaneIcon className="w-8 h-8 text-green-600" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-800 mb-3">💬 Suggestions</h3>
+                <h3 className="text-xl font-bold text-gray-800 mb-3">Suggestions</h3>
                 <p className="text-gray-600 mb-6 text-sm">
                   Have ideas for new events, activities, or ways to improve our community?
                 </p>
@@ -71,7 +71,7 @@ export default function FeedbackPage() {
                 <div className="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
                   <StarIcon className="w-8 h-8 text-yellow-600" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-800 mb-3">⭐ Testimonials</h3>
+                <h3 className="text-xl font-bold text-gray-800 mb-3">Testimonials</h3>
                 <p className="text-gray-600 mb-6 text-sm">
                   Share your positive experiences and help others discover our community.
                 </p>
@@ -265,7 +265,7 @@ export default function FeedbackPage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {[...Array(8)].map((_, i) => (
               <div key={i} className="aspect-square bg-gradient-to-br from-purple-400 to-pink-400 rounded-lg flex items-center justify-center">
-                <span className="text-white text-3xl">📸</span>
+                <span className="text-gray-600 text-lg font-semibold">Photo</span>
               </div>
             ))}
           </div>
@@ -299,7 +299,7 @@ export default function FeedbackPage() {
               <p className="text-purple-100">(510) 555-0127</p>
             </div>
             <div className="bg-white bg-opacity-10 rounded-lg p-6">
-              <h3 className="font-semibold mb-2">💬 WhatsApp</h3>
+              <h3 className="font-semibold mb-2">WhatsApp</h3>
               <p className="text-purple-100">(510) 555-0128</p>
             </div>
           </div>

@@ -33,7 +33,7 @@ export default function RegisterPage() {
                 <div className="w-16 h-16 bg-gray-200 rounded-full flex items-center justify-center mx-auto mb-6">
                   <ShoppingBagIcon className="w-8 h-8 text-gray-800" />
                 </div>
-                <h3 className="text-2xl font-bold text-gray-800 mb-4">🛍 Non-Food Vendor</h3>
+                <h3 className="text-2xl font-bold text-gray-800 mb-4">Non-Food Vendor</h3>
                 <p className="text-gray-600 mb-6">
                   Sell crafts, clothing, books, jewelry, or other non-food items at our events. Perfect for local businesses and artisans.
                 </p>
@@ -63,7 +63,7 @@ export default function RegisterPage() {
                 <div className="w-16 h-16 bg-gray-200 rounded-full flex items-center justify-center mx-auto mb-6">
                   <CakeIcon className="w-8 h-8 text-gray-800" />
                 </div>
-                <h3 className="text-2xl font-bold text-gray-800 mb-4">🍽 Food Vendor</h3>
+                <h3 className="text-2xl font-bold text-gray-800 mb-4">Food Vendor</h3>
                 <p className="text-gray-600 mb-6">
                   Share delicious food and beverages with our community. Must have proper permits and meet health requirements.
                 </p>
@@ -93,7 +93,7 @@ export default function RegisterPage() {
                 <div className="w-16 h-16 bg-gray-200 rounded-full flex items-center justify-center mx-auto mb-6">
                   <UserGroupIcon className="w-8 h-8 text-gray-800" />
                 </div>
-                <h3 className="text-2xl font-bold text-gray-800 mb-4">👥 Event Attendance</h3>
+                <h3 className="text-2xl font-bold text-gray-800 mb-4">Event Attendance</h3>
                 <p className="text-gray-600 mb-6">
                   Register to attend our events and stay updated on schedules, activities, and special announcements.
                 </p>
@@ -125,7 +125,7 @@ export default function RegisterPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-gray-50 rounded-xl p-8 border-2 border-gray-300">
             <div className="text-center">
-              <h2 className="text-3xl font-bold text-gray-800 mb-4">🎊 Pakistan Independence Day - Aug 31, 2025</h2>
+              <h2 className="text-3xl font-bold text-gray-800 mb-4">Pakistan Independence Day - Aug 31, 2025</h2>
               <p className="text-lg text-gray-600 mb-8">
                 Our biggest celebration of the year! Limited vendor spaces available. Register early to secure your spot.
               </p>
@@ -229,15 +229,15 @@ export default function RegisterPage() {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-gray-50 rounded-lg p-6">
-              <h3 className="font-semibold text-gray-800 mb-2">📧 Email</h3>
+              <h3 className="font-semibold text-gray-800 mb-2">Email</h3>
               <p className="text-gray-600">vendors@eastbaymuslims.org</p>
             </div>
             <div className="bg-gray-50 rounded-lg p-6">
-              <h3 className="font-semibold text-gray-800 mb-2">📞 Phone</h3>
+              <h3 className="font-semibold text-gray-800 mb-2">Phone</h3>
               <p className="text-gray-600">(510)-734-2458</p>
             </div>
             <div className="bg-gray-50 rounded-lg p-6">
-              <h3 className="font-semibold text-gray-800 mb-2">💬 WhatsApp</h3>
+              <h3 className="font-semibold text-gray-800 mb-2">WhatsApp</h3>
               <p className="text-gray-600">(510) 555-0124</p>
             </div>
           </div>

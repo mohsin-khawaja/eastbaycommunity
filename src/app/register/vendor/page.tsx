@@ -25,7 +25,7 @@ export default function VendorRegistrationPage() {
               <ShoppingBagIcon className="w-10 h-10 text-white" />
             </div>
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
-              🛍 Non-Food Vendor Registration
+              Non-Food Vendor Registration
             </h1>
             <p className="text-xl text-green-100 mb-8 max-w-3xl mx-auto">
               Join our vibrant marketplace! Register to sell crafts, clothing, books, jewelry, and other non-food items at our community events.
@@ -211,7 +211,7 @@ export default function VendorRegistrationPage() {
               </div>
               
               <div className="text-center">
-                <h3 className="text-2xl font-bold text-gray-800 mb-4">🎊 Special Events</h3>
+                <h3 className="text-2xl font-bold text-gray-800 mb-4">Special Events</h3>
                 <div className="text-4xl font-bold text-blue-600 mb-2">$250</div>
                 <p className="text-gray-600 mb-4">Pakistan Independence Day</p>
                 <ul className="text-left text-sm text-gray-600 space-y-1">

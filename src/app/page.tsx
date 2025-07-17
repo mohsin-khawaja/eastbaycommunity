@@ -62,7 +62,6 @@ export default function Home() {
             {/* Featured Event Banner */}
             <div className="bg-gray-800 bg-opacity-80 backdrop-blur-sm rounded-lg p-6 mb-8 max-w-4xl mx-auto">
               <div className="flex items-center justify-center space-x-2 mb-2">
-                <span className="text-2xl">🎊</span>
                 <span className="text-lg font-semibold">Featured Event</span>
               </div>
               <h3 className="text-2xl font-bold mb-2">{featuredEvent.title}</h3>

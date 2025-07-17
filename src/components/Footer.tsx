@@ -78,25 +78,25 @@ const Footer = () => {
                     href="#"
                     className="bg-gray-700 hover:bg-gray-800 px-3 py-1 rounded text-sm transition-colors"
                   >
-                    💳 PayPal
+                    PayPal
                   </a>
                   <a
                     href="#"
                     className="bg-gray-700 hover:bg-gray-800 px-3 py-1 rounded text-sm transition-colors"
                   >
-                    📱 Zelle
+                    Zelle
                   </a>
                   <a
                     href="#"
                     className="bg-gray-700 hover:bg-gray-800 px-3 py-1 rounded text-sm transition-colors"
                   >
-                    💰 Venmo
+                    Venmo
                   </a>
                   <a
                     href="#"
                     className="bg-gray-700 hover:bg-gray-800 px-3 py-1 rounded text-sm transition-colors"
                   >
-                    🏦 Stripe
+                    Stripe
                   </a>
                 </div>
               </div>
@@ -117,16 +117,16 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex space-x-6 mb-4 md:mb-0">
               <a href="#" className="text-gray-300 hover:text-white transition-colors">
-                📘 Facebook
+                Facebook
               </a>
               <a href="#" className="text-gray-300 hover:text-white transition-colors">
-                📸 Instagram
+                Instagram
               </a>
               <a href="#" className="text-gray-300 hover:text-white transition-colors">
-                🐦 Twitter
+                Twitter
               </a>
               <a href="#" className="text-gray-300 hover:text-white transition-colors">
-                📺 YouTube
+                YouTube
               </a>
             </div>
             <div className="text-center md:text-right">

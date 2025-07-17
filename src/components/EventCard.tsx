@@ -23,7 +23,7 @@ const EventCard: React.FC<EventCardProps> = ({
     <div className={`bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 ${featured ? 'ring-2 ring-gray-800' : ''}`}>
       {image && (
                   <div className="h-48 bg-gray-300 flex items-center justify-center">
-          <span className="text-white text-6xl">🎉</span>
+          <span className="text-gray-600 text-xl font-semibold">Event Image</span>
         </div>
       )}
       

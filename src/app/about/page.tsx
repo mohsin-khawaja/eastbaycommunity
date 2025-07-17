@@ -46,7 +46,7 @@ export default function AboutPage() {
               </div>
               
               <div className="bg-white rounded-lg shadow-sm p-6 border border-gray-200">
-                <h3 className="text-xl font-bold text-gray-800 mb-4">🌟 Our Vision</h3>
+                <h3 className="text-xl font-bold text-gray-800 mb-4">Our Vision</h3>
                 <p className="text-gray-600">
                   To be the leading organization fostering unity, cultural pride, and community engagement among Muslim families in the East Bay, creating a legacy of togetherness for future generations.
                 </p>
@@ -87,7 +87,7 @@ export default function AboutPage() {
             
             <div className="bg-white rounded-lg shadow-sm p-8 text-center">
               <div className="w-16 h-16 bg-gray-200 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-gray-800 text-2xl">🌟</span>
+                <span className="text-gray-800 text-xl font-semibold">★</span>
               </div>
               <h3 className="text-xl font-bold text-gray-800 mb-4">Excellence</h3>
               <p className="text-gray-600">
@@ -171,7 +171,7 @@ export default function AboutPage() {
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-800 mb-4">📬 Contact Us</h2>
+            <h2 className="text-3xl font-bold text-gray-800 mb-4">Contact Us</h2>
             <p className="text-lg text-gray-600">Get in touch with our team</p>
           </div>
           
@@ -272,13 +272,13 @@ export default function AboutPage() {
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-800 mb-4">💳 Support Our Mission</h2>
+            <h2 className="text-3xl font-bold text-gray-800 mb-4">Support Our Mission</h2>
             <p className="text-lg text-gray-600">Help us continue building community through your generous support</p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-xl p-8 border-2 border-green-200">
-              <h3 className="text-2xl font-bold text-gray-800 mb-4">💰 Make a Donation</h3>
+              <h3 className="text-2xl font-bold text-gray-800 mb-4">Make a Donation</h3>
               <p className="text-gray-600 mb-6">
                 Your donations help us organize events, provide community services, and maintain our programs throughout the year.
               </p>
@@ -299,10 +299,10 @@ export default function AboutPage() {
               </div>
               
               <div className="flex flex-wrap gap-2 mb-6">
-                <span className="bg-gray-700 text-white px-3 py-1 rounded-full text-sm">💳 PayPal</span>
-                <span className="bg-gray-700 text-white px-3 py-1 rounded-full text-sm">📱 Zelle</span>
-                <span className="bg-gray-700 text-white px-3 py-1 rounded-full text-sm">💰 Venmo</span>
-                <span className="bg-gray-700 text-white px-3 py-1 rounded-full text-sm">🏦 Stripe</span>
+                <span className="bg-gray-700 text-white px-3 py-1 rounded-full text-sm">PayPal</span>
+                <span className="bg-gray-700 text-white px-3 py-1 rounded-full text-sm">Zelle</span>
+                <span className="bg-gray-700 text-white px-3 py-1 rounded-full text-sm">Venmo</span>
+                <span className="bg-gray-700 text-white px-3 py-1 rounded-full text-sm">Stripe</span>
               </div>
               
               <Link

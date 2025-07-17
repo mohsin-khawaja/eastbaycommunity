@@ -25,7 +25,7 @@ export default function FoodVendorRegistrationPage() {
               <CakeIcon className="w-10 h-10 text-white" />
             </div>
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
-              🍽 Food Vendor Registration
+              Food Vendor Registration
             </h1>
             <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
               Share your delicious cuisine with our community! Register to serve food and beverages at our events. All vendors must meet health and safety requirements.
@@ -207,7 +207,7 @@ export default function FoodVendorRegistrationPage() {
               </div>
               
               <div className="text-center">
-                <h3 className="text-2xl font-bold text-gray-800 mb-4">🎊 Special Events</h3>
+                <h3 className="text-2xl font-bold text-gray-800 mb-4">Special Events</h3>
                 <div className="text-4xl font-bold text-purple-600 mb-2">$350</div>
                 <p className="text-gray-600 mb-4">Pakistan Independence Day</p>
                 <ul className="text-left text-sm text-gray-600 space-y-1">

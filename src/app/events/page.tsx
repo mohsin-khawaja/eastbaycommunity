@@ -90,7 +90,7 @@ export default function EventsPage() {
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-800 mb-4">🎊 Featured Event</h2>
+                          <h2 className="text-3xl font-bold text-gray-800 mb-4">Featured Event</h2>
             <p className="text-lg text-gray-600">Don&apos;t miss our biggest celebration of the year!</p>
           </div>
           
@@ -137,7 +137,7 @@ export default function EventsPage() {
                 
                 <div className="order-first lg:order-last">
                   <div className="h-64 bg-gray-300 rounded-lg flex items-center justify-center">
-                    <span className="text-white text-6xl">🎉</span>
+                    <span className="text-gray-600 text-xl font-semibold">Event Image</span>
                   </div>
                 </div>
               </div>
@@ -177,7 +177,7 @@ export default function EventsPage() {
             >
               <div className="text-center">
                 <CalendarDaysIcon className="w-12 h-12 text-gray-700 mx-auto mb-4 group-hover:scale-110 transition-transform" />
-                <h3 className="text-lg font-semibold text-gray-800 mb-2">🎉 Event Calendar</h3>
+                <h3 className="text-lg font-semibold text-gray-800 mb-2">Event Calendar</h3>
                 <p className="text-gray-600 text-sm">View all upcoming events in calendar format</p>
               </div>
             </Link>
@@ -188,7 +188,7 @@ export default function EventsPage() {
             >
               <div className="text-center">
                 <MapPinIcon className="w-12 h-12 text-gray-700 mx-auto mb-4 group-hover:scale-110 transition-transform" />
-                <h3 className="text-lg font-semibold text-gray-800 mb-2">📍 Locations & Parking</h3>
+                <h3 className="text-lg font-semibold text-gray-800 mb-2">Locations & Parking</h3>
                 <p className="text-gray-600 text-sm">Find event venues and parking information</p>
               </div>
             </Link>
@@ -199,7 +199,7 @@ export default function EventsPage() {
             >
               <div className="text-center">
                 <UsersIcon className="w-12 h-12 text-gray-700 mx-auto mb-4 group-hover:scale-110 transition-transform" />
-                <h3 className="text-lg font-semibold text-gray-800 mb-2">🎤 Performers</h3>
+                <h3 className="text-lg font-semibold text-gray-800 mb-2">Performers</h3>
                 <p className="text-gray-600 text-sm">Meet the talented artists and performers</p>
               </div>
             </Link>
@@ -210,9 +210,9 @@ export default function EventsPage() {
             >
               <div className="text-center">
                 <div className="w-12 h-12 mx-auto mb-4 group-hover:scale-110 transition-transform flex items-center justify-center">
-                  <span className="text-gray-700 text-2xl">📸</span>
+                  <span className="text-gray-700 text-sm font-semibold">Gallery</span>
                 </div>
-                <h3 className="text-lg font-semibold text-gray-800 mb-2">📸 Event Gallery</h3>
+                <h3 className="text-lg font-semibold text-gray-800 mb-2">Event Gallery</h3>
                 <p className="text-gray-600 text-sm">Browse photos from past events</p>
               </div>
             </Link>
