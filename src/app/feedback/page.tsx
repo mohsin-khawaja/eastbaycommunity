@@ -5,13 +5,13 @@ export default function FeedbackPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-purple-600 to-pink-600 text-white py-16">
+      <section className="bg-green-900 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
               Community Feedback
             </h1>
-            <p className="text-xl text-purple-100 mb-8 max-w-3xl mx-auto">
+            <p className="text-xl text-green-100 mb-8 max-w-3xl mx-auto">
               Your voice matters! Help us improve our events, share your experiences, and contribute to making our community celebrations even better.
             </p>
           </div>
@@ -19,154 +19,158 @@ export default function FeedbackPage() {
       </section>
 
       {/* Feedback Options */}
-      <section className="py-16">
+      <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-800 mb-4">Share Your Feedback</h2>
-            <p className="text-lg text-gray-600">Choose how you&apos;d like to share your thoughts with us</p>
+            <h2 className="text-3xl font-bold text-gray-800 mb-4">How Would You Like to Share?</h2>
+            <p className="text-lg text-gray-600">Choose the feedback option that works best for you</p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {/* Event Feedback */}
-            <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow">
-              <div className="text-center">
-                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <ChatBubbleOvalLeftIcon className="w-8 h-8 text-blue-600" />
-                </div>
-                <h3 className="text-xl font-bold text-gray-800 mb-3">Event Feedback</h3>
-                <p className="text-gray-600 mb-6 text-sm">
-                  Share your thoughts on recent events, what you enjoyed, and suggestions for improvement.
-                </p>
-                <Link
-                  href="/feedback/event"
-                  className="block w-full bg-blue-600 hover:bg-blue-700 text-white py-3 px-4 rounded-lg font-medium transition-colors"
-                >
-                  Give Event Feedback
-                </Link>
+            <div className="bg-green-50 hover:bg-green-100 border-2 border-green-200 rounded-lg p-6 text-center transition-colors">
+              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <ChatBubbleOvalLeftIcon className="w-8 h-8 text-green-700" />
               </div>
+              <h3 className="text-xl font-bold text-gray-800 mb-2">Event Feedback</h3>
+              <p className="text-gray-600 mb-4">Share your thoughts about recent events and celebrations</p>
+              <Link
+                href="/feedback/event"
+                className="inline-block bg-green-700 hover:bg-green-800 text-white px-4 py-2 rounded-lg font-medium transition-colors"
+              >
+                Give Event Feedback
+              </Link>
             </div>
-
-            {/* Community Suggestions */}
-            <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow">
-              <div className="text-center">
-                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <PaperAirplaneIcon className="w-8 h-8 text-green-600" />
-                </div>
-                <h3 className="text-xl font-bold text-gray-800 mb-3">Suggestions</h3>
-                <p className="text-gray-600 mb-6 text-sm">
-                  Have ideas for new events, activities, or ways to improve our community?
-                </p>
-                <Link
-                  href="/feedback/suggestions"
-                  className="block w-full bg-green-600 hover:bg-green-700 text-white py-3 px-4 rounded-lg font-medium transition-colors"
-                >
-                  Share Suggestions
-                </Link>
+            
+            <div className="bg-green-50 hover:bg-green-100 border-2 border-green-200 rounded-lg p-6 text-center transition-colors">
+              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <PaperAirplaneIcon className="w-8 h-8 text-green-700" />
               </div>
+              <h3 className="text-xl font-bold text-gray-800 mb-2">Suggestions</h3>
+              <p className="text-gray-600 mb-4">Suggest new events, improvements, or community initiatives</p>
+              <Link
+                href="/feedback/suggestions"
+                className="inline-block bg-green-700 hover:bg-green-800 text-white px-4 py-2 rounded-lg font-medium transition-colors"
+              >
+                Make Suggestions
+              </Link>
             </div>
-
-            {/* Testimonials */}
-            <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow">
-              <div className="text-center">
-                <div className="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <StarIcon className="w-8 h-8 text-yellow-600" />
-                </div>
-                <h3 className="text-xl font-bold text-gray-800 mb-3">Testimonials</h3>
-                <p className="text-gray-600 mb-6 text-sm">
-                  Share your positive experiences and help others discover our community.
-                </p>
-                <Link
-                  href="/feedback/testimonials"
-                  className="block w-full bg-yellow-600 hover:bg-yellow-700 text-white py-3 px-4 rounded-lg font-medium transition-colors"
-                >
-                  Write Testimonial
-                </Link>
+            
+            <div className="bg-green-50 hover:bg-green-100 border-2 border-green-200 rounded-lg p-6 text-center transition-colors">
+              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <StarIcon className="w-8 h-8 text-green-700" />
               </div>
+              <h3 className="text-xl font-bold text-gray-800 mb-2">Testimonials</h3>
+              <p className="text-gray-600 mb-4">Share your positive experiences and community stories</p>
+              <Link
+                href="/feedback/testimonials"
+                className="inline-block bg-green-700 hover:bg-green-800 text-white px-4 py-2 rounded-lg font-medium transition-colors"
+              >
+                Share Testimonial
+              </Link>
             </div>
-
-            {/* Photo Upload */}
-            <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow">
-              <div className="text-center">
-                <div className="w-16 h-16 bg-pink-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <CameraIcon className="w-8 h-8 text-pink-600" />
-                </div>
-                <h3 className="text-xl font-bold text-gray-800 mb-3">📷 Share Photos</h3>
-                <p className="text-gray-600 mb-6 text-sm">
-                  Upload your favorite photos from our events to share with the community.
-                </p>
-                <Link
-                  href="/feedback/photos"
-                  className="block w-full bg-pink-600 hover:bg-pink-700 text-white py-3 px-4 rounded-lg font-medium transition-colors"
-                >
-                  Upload Photos
-                </Link>
+            
+            <div className="bg-green-50 hover:bg-green-100 border-2 border-green-200 rounded-lg p-6 text-center transition-colors">
+              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <CameraIcon className="w-8 h-8 text-green-700" />
               </div>
+              <h3 className="text-xl font-bold text-gray-800 mb-2">Upload Photos</h3>
+              <p className="text-gray-600 mb-4">Share your favorite moments and memories from our events</p>
+              <Link
+                href="/feedback/photos"
+                className="inline-block bg-green-700 hover:bg-green-800 text-white px-4 py-2 rounded-lg font-medium transition-colors"
+              >
+                Upload Photos
+              </Link>
             </div>
           </div>
         </div>
       </section>
 
       {/* Quick Feedback Form */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-800 mb-4">Quick Feedback</h2>
-            <p className="text-lg text-gray-600">Have a quick suggestion or comment? Let us know!</p>
+            <h2 className="text-3xl font-bold text-gray-800 mb-4">Quick Feedback Form</h2>
+            <p className="text-lg text-gray-600">Share your thoughts in just a few clicks</p>
           </div>
           
-          <div className="bg-gradient-to-r from-purple-50 to-pink-50 rounded-xl p-8 border-2 border-purple-200">
+          <div className="bg-white rounded-xl shadow-lg p-8">
             <form className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Your Name
+                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
+                    Name (Optional)
                   </label>
                   <input
                     type="text"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent"
-                    placeholder="Enter your name"
+                    id="name"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                    placeholder="Your name"
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Email Address
+                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+                    Email (Optional)
                   </label>
                   <input
                     type="email"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent"
-                    placeholder="Enter your email"
+                    id="email"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                    placeholder="your.email@example.com"
                   />
                 </div>
               </div>
               
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Feedback Type
+                <label htmlFor="event" className="block text-sm font-medium text-gray-700 mb-2">
+                  Which event are you providing feedback about?
                 </label>
-                <select className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent">
-                  <option>Event Feedback</option>
-                  <option>General Suggestion</option>
-                  <option>Compliment</option>
-                  <option>Complaint</option>
-                  <option>Other</option>
+                <select
+                  id="event"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                >
+                  <option value="">Select an event</option>
+                  <option value="pakistan-independence">Pakistan Independence Day 2024</option>
+                  <option value="eid-festival">Eid Festival 2024</option>
+                  <option value="youth-sports">Youth Sports Day 2024</option>
+                  <option value="community-potluck">Community Potluck</option>
+                  <option value="general">General Community Feedback</option>
                 </select>
               </div>
               
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Your Message
+                <label htmlFor="rating" className="block text-sm font-medium text-gray-700 mb-2">
+                  Overall Rating
+                </label>
+                <div className="flex items-center space-x-2">
+                  {[1, 2, 3, 4, 5].map((star) => (
+                    <button
+                      key={star}
+                      type="button"
+                      className="text-2xl text-gray-300 hover:text-green-500 transition-colors"
+                    >
+                      ⭐
+                    </button>
+                  ))}
+                </div>
+              </div>
+              
+              <div>
+                <label htmlFor="feedback" className="block text-sm font-medium text-gray-700 mb-2">
+                  Your Feedback
                 </label>
                 <textarea
-                  rows={4}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent"
-                  placeholder="Share your thoughts, suggestions, or feedback..."
+                  id="feedback"
+                  rows={6}
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                  placeholder="Tell us about your experience, suggestions for improvement, or what you loved about the event..."
                 ></textarea>
               </div>
               
               <div className="text-center">
                 <button
                   type="submit"
-                  className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 rounded-lg font-medium transition-colors"
+                  className="bg-green-700 hover:bg-green-800 text-white px-8 py-3 rounded-lg font-medium transition-colors"
                 >
                   Submit Feedback
                 </button>
@@ -176,86 +180,86 @@ export default function FeedbackPage() {
         </div>
       </section>
 
-      {/* Community Testimonials */}
-      <section className="py-16 bg-gray-50">
+      {/* Recent Testimonials */}
+      <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-800 mb-4">What Our Community Says</h2>
-            <p className="text-lg text-gray-600">Read testimonials from fellow community members</p>
+            <p className="text-lg text-gray-600">Hear from families who&apos;ve attended our events</p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-white rounded-lg shadow-sm p-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="bg-green-50 rounded-lg p-6 border-2 border-green-200">
               <div className="flex items-center mb-4">
-                <div className="flex text-yellow-500">
-                  {[...Array(5)].map((_, i) => (
-                    <StarIcon key={i} className="w-5 h-5 fill-current" />
+                <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                  <span className="text-green-700 font-semibold">AK</span>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-gray-800">Amina Khan</h3>
+                  <p className="text-sm text-gray-600">Pakistan Independence Day 2024</p>
+                </div>
+              </div>
+              <div className="mb-4">
+                <div className="flex text-green-600">
+                  {[1, 2, 3, 4, 5].map((star) => (
+                    <span key={star} className="text-sm">⭐</span>
                   ))}
                 </div>
               </div>
-              <p className="text-gray-600 mb-4">
-                &quot;The Pakistan Independence Day celebration was absolutely wonderful! Great food, amazing performances, and such a welcoming atmosphere for families.&quot;
+              <p className="text-gray-700">
+                &quot;The Pakistan Independence Day celebration was absolutely wonderful! The food was delicious, the performances were amazing, and my children had so much fun. Thank you for organizing such a beautiful event.&quot;
               </p>
-              <div className="flex items-center">
-                <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-3">
-                  <span className="text-green-600 font-semibold">AS</span>
-                </div>
-                <div>
-                  <h4 className="font-semibold text-gray-800">Aisha S.</h4>
-                  <p className="text-sm text-gray-500">Fremont, CA</p>
-                </div>
-              </div>
             </div>
             
-            <div className="bg-white rounded-lg shadow-sm p-6">
+            <div className="bg-green-50 rounded-lg p-6 border-2 border-green-200">
               <div className="flex items-center mb-4">
-                <div className="flex text-yellow-500">
-                  {[...Array(5)].map((_, i) => (
-                    <StarIcon key={i} className="w-5 h-5 fill-current" />
+                <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                  <span className="text-green-700 font-semibold">MR</span>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-gray-800">Mohammed Rahman</h3>
+                  <p className="text-sm text-gray-600">Eid Festival 2024</p>
+                </div>
+              </div>
+              <div className="mb-4">
+                <div className="flex text-green-600">
+                  {[1, 2, 3, 4, 5].map((star) => (
+                    <span key={star} className="text-sm">⭐</span>
                   ))}
                 </div>
               </div>
-              <p className="text-gray-600 mb-4">
-                &quot;As a vendor, I was impressed by the organization and the warm community spirit. The event was well-managed and brought so many families together.&quot;
+              <p className="text-gray-700">
+                &quot;Great organization and such a welcoming atmosphere. It&apos;s wonderful to see our community come together to celebrate our traditions. Looking forward to the next event!&quot;
               </p>
-              <div className="flex items-center">
-                <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mr-3">
-                  <span className="text-blue-600 font-semibold">MK</span>
-                </div>
-                <div>
-                  <h4 className="font-semibold text-gray-800">Mohammed K.</h4>
-                  <p className="text-sm text-gray-500">Hayward, CA</p>
-                </div>
-              </div>
             </div>
             
-            <div className="bg-white rounded-lg shadow-sm p-6">
+            <div className="bg-green-50 rounded-lg p-6 border-2 border-green-200">
               <div className="flex items-center mb-4">
-                <div className="flex text-yellow-500">
-                  {[...Array(5)].map((_, i) => (
-                    <StarIcon key={i} className="w-5 h-5 fill-current" />
+                <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                  <span className="text-green-700 font-semibold">FA</span>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-gray-800">Fatima Ali</h3>
+                  <p className="text-sm text-gray-600">Youth Sports Day 2024</p>
+                </div>
+              </div>
+              <div className="mb-4">
+                <div className="flex text-green-600">
+                  {[1, 2, 3, 4, 5].map((star) => (
+                    <span key={star} className="text-sm">⭐</span>
                   ))}
                 </div>
               </div>
-              <p className="text-gray-600 mb-4">
-                &quot;My kids had such a great time at the youth sports day! It&apos;s wonderful to have events that bring our community together while keeping our culture alive.&quot;
+              <p className="text-gray-700">
+                &quot;The youth sports day was fantastic! My kids made new friends and had a blast playing cricket and football. The volunteers were amazing and so helpful.&quot;
               </p>
-              <div className="flex items-center">
-                <div className="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center mr-3">
-                  <span className="text-purple-600 font-semibold">FH</span>
-                </div>
-                <div>
-                  <h4 className="font-semibold text-gray-800">Fatima H.</h4>
-                  <p className="text-sm text-gray-500">Union City, CA</p>
-                </div>
-              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Photo Gallery Preview */}
-      <section className="py-16 bg-white">
+      {/* Community Photo Gallery */}
+      <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-800 mb-4">Community Photo Gallery</h2>
@@ -264,8 +268,8 @@ export default function FeedbackPage() {
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {[...Array(8)].map((_, i) => (
-              <div key={i} className="aspect-square bg-gradient-to-br from-purple-400 to-pink-400 rounded-lg flex items-center justify-center">
-                <span className="text-gray-600 text-lg font-semibold">Photo</span>
+              <div key={i} className="aspect-square bg-green-100 rounded-lg flex items-center justify-center border-2 border-green-200">
+                <span className="text-green-700 text-lg font-semibold">Photo</span>
               </div>
             ))}
           </div>
@@ -273,7 +277,7 @@ export default function FeedbackPage() {
           <div className="text-center mt-8">
             <Link
               href="/feedback/photos"
-              className="inline-block bg-pink-600 hover:bg-pink-700 text-white px-8 py-3 rounded-lg font-medium transition-colors"
+              className="inline-block bg-green-700 hover:bg-green-800 text-white px-8 py-3 rounded-lg font-medium transition-colors"
             >
               View Full Gallery
             </Link>
@@ -282,38 +286,38 @@ export default function FeedbackPage() {
       </section>
 
       {/* Contact for Feedback */}
-      <section className="py-16 bg-gradient-to-r from-purple-600 to-pink-600 text-white">
+      <section className="py-16 bg-green-900 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold mb-6">More Ways to Connect</h2>
-          <p className="text-lg mb-8 text-purple-100">
+          <p className="text-lg mb-8 text-green-100">
             Prefer to share your feedback directly? Reach out to us through these channels.
           </p>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
             <div className="bg-white bg-opacity-10 rounded-lg p-6">
               <h3 className="font-semibold mb-2">📧 Email</h3>
-              <p className="text-purple-100">feedback@eastbaymuslims.org</p>
+              <p className="text-green-100">feedback@eastbaymuslims.org</p>
             </div>
             <div className="bg-white bg-opacity-10 rounded-lg p-6">
               <h3 className="font-semibold mb-2">📞 Phone</h3>
-              <p className="text-purple-100">(510) 555-0127</p>
+              <p className="text-green-100">(510)-734-2458</p>
             </div>
             <div className="bg-white bg-opacity-10 rounded-lg p-6">
-              <h3 className="font-semibold mb-2">WhatsApp</h3>
-              <p className="text-purple-100">(510) 555-0128</p>
+              <h3 className="font-semibold mb-2">💬 WhatsApp</h3>
+              <p className="text-green-100">(510) 555-0128</p>
             </div>
           </div>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/about/contact"
-              className="bg-white text-purple-600 hover:bg-purple-50 px-8 py-3 rounded-lg font-medium transition-colors"
+              className="bg-white text-green-900 hover:bg-green-50 px-8 py-3 rounded-lg font-medium transition-colors"
             >
               Contact Us
             </Link>
             <Link
               href="/volunteer"
-              className="bg-purple-500 hover:bg-purple-400 text-white px-8 py-3 rounded-lg font-medium transition-colors"
+              className="bg-green-700 hover:bg-green-600 text-white px-8 py-3 rounded-lg font-medium transition-colors"
             >
               Get Involved
             </Link>

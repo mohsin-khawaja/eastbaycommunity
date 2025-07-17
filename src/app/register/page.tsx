@@ -5,13 +5,13 @@ export default function RegisterPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="bg-gray-900 text-white py-16">
+      <section className="bg-green-900 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
               Register for Events
             </h1>
-            <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
+            <p className="text-xl text-green-100 mb-8 max-w-3xl mx-auto">
               Join us as a vendor, performer, or attendee. Choose your registration type below and become part of our vibrant community celebrations.
             </p>
           </div>
@@ -19,7 +19,7 @@ export default function RegisterPage() {
       </section>
 
       {/* Registration Options */}
-      <section className="py-16">
+      <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-800 mb-4">Choose Your Registration Type</h2>
@@ -27,92 +27,125 @@ export default function RegisterPage() {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Non-Food Vendor Registration */}
-            <div className="bg-white rounded-xl shadow-lg p-8 border-2 border-gray-200 hover:border-gray-400 transition-colors">
+            {/* General Event Registration */}
+            <div className="bg-white rounded-xl shadow-lg border-2 border-green-200 hover:border-green-400 transition-colors p-8">
+              <div className="text-center mb-6">
+                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <UserGroupIcon className="w-8 h-8 text-green-700" />
+                </div>
+                <h3 className="text-2xl font-bold text-gray-800 mb-2">General Attendee</h3>
+                <p className="text-gray-600">Register to attend our community events as a participant</p>
+              </div>
+              
+              <div className="space-y-4 mb-6">
+                <div className="flex items-center space-x-3">
+                  <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                  <span className="text-gray-700">Access to all event activities</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                  <span className="text-gray-700">Free participation in festivities</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                  <span className="text-gray-700">Family-friendly activities</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                  <span className="text-gray-700">Community networking</span>
+                </div>
+              </div>
+              
               <div className="text-center">
-                <div className="w-16 h-16 bg-gray-200 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <ShoppingBagIcon className="w-8 h-8 text-gray-800" />
+                <div className="text-3xl font-bold text-green-700 mb-2">Free</div>
+                <p className="text-gray-600 text-sm mb-4">No registration fee required</p>
+                <Link
+                  href="/register/attendee"
+                  className="block bg-green-700 hover:bg-green-800 text-white px-6 py-3 rounded-lg font-medium transition-colors"
+                >
+                  Register Now
+                </Link>
+              </div>
+            </div>
+
+            {/* Non-Food Vendor Registration */}
+            <div className="bg-white rounded-xl shadow-lg border-2 border-green-200 hover:border-green-400 transition-colors p-8">
+              <div className="text-center mb-6">
+                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <ShoppingBagIcon className="w-8 h-8 text-green-700" />
                 </div>
-                <h3 className="text-2xl font-bold text-gray-800 mb-4">Non-Food Vendor</h3>
-                <p className="text-gray-600 mb-6">
-                  Sell crafts, clothing, books, jewelry, or other non-food items at our events. Perfect for local businesses and artisans.
-                </p>
-                
-                <div className="bg-gray-50 rounded-lg p-4 mb-6">
-                  <h4 className="font-semibold text-gray-800 mb-2">Includes:</h4>
-                  <ul className="text-sm text-gray-600 space-y-1">
-                    <li>• 10x10 booth space</li>
-                    <li>• Table and chairs</li>
-                    <li>• Electricity access</li>
-                    <li>• Event promotion</li>
-                  </ul>
+                <h3 className="text-2xl font-bold text-gray-800 mb-2">Non-Food Vendor</h3>
+                <p className="text-gray-600">Sell products, crafts, or services at our events</p>
+              </div>
+              
+              <div className="space-y-4 mb-6">
+                <div className="flex items-center space-x-3">
+                  <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                  <span className="text-gray-700">10x10 ft booth space</span>
                 </div>
-                
+                <div className="flex items-center space-x-3">
+                  <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                  <span className="text-gray-700">Table and chairs provided</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                  <span className="text-gray-700">Promotional opportunities</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                  <span className="text-gray-700">Access to event marketing</span>
+                </div>
+              </div>
+              
+              <div className="text-center">
+                <div className="text-3xl font-bold text-green-700 mb-2">$250</div>
+                <p className="text-gray-600 text-sm mb-4">Per event registration</p>
                 <Link
                   href="/register/vendor"
-                  className="block w-full bg-gray-800 hover:bg-black text-white py-3 px-6 rounded-lg font-medium transition-colors text-center"
+                  className="block bg-green-700 hover:bg-green-800 text-white px-6 py-3 rounded-lg font-medium transition-colors"
                 >
-                  Register as Vendor
+                  Register Now
                 </Link>
               </div>
             </div>
 
             {/* Food Vendor Registration */}
-            <div className="bg-white rounded-xl shadow-lg p-8 border-2 border-gray-200 hover:border-gray-400 transition-colors">
+            <div className="bg-white rounded-xl shadow-lg border-2 border-green-200 hover:border-green-400 transition-colors p-8">
+              <div className="text-center mb-6">
+                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <CakeIcon className="w-8 h-8 text-green-700" />
+                </div>
+                <h3 className="text-2xl font-bold text-gray-800 mb-2">Food Vendor</h3>
+                <p className="text-gray-600">Serve delicious food and beverages at our events</p>
+              </div>
+              
+              <div className="space-y-4 mb-6">
+                <div className="flex items-center space-x-3">
+                  <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                  <span className="text-gray-700">10x10 ft booth space</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                  <span className="text-gray-700">Power connection available</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                  <span className="text-gray-700">High-traffic location</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                  <span className="text-gray-700">Event promotion included</span>
+                </div>
+              </div>
+              
               <div className="text-center">
-                <div className="w-16 h-16 bg-gray-200 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <CakeIcon className="w-8 h-8 text-gray-800" />
-                </div>
-                <h3 className="text-2xl font-bold text-gray-800 mb-4">Food Vendor</h3>
-                <p className="text-gray-600 mb-6">
-                  Share delicious food and beverages with our community. Must have proper permits and meet health requirements.
-                </p>
-                
-                <div className="bg-gray-50 rounded-lg p-4 mb-6">
-                  <h4 className="font-semibold text-gray-800 mb-2">Includes:</h4>
-                  <ul className="text-sm text-gray-600 space-y-1">
-                    <li>• 12x12 booth space</li>
-                    <li>• Power and water access</li>
-                    <li>• Waste management</li>
-                    <li>• Featured on food map</li>
-                  </ul>
-                </div>
-                
+                <div className="text-3xl font-bold text-green-700 mb-2">$350</div>
+                <p className="text-gray-600 text-sm mb-4">Per event registration</p>
                 <Link
                   href="/register/food-vendor"
-                  className="block w-full bg-gray-800 hover:bg-black text-white py-3 px-6 rounded-lg font-medium transition-colors text-center"
+                  className="block bg-green-700 hover:bg-green-800 text-white px-6 py-3 rounded-lg font-medium transition-colors"
                 >
-                  Register as Food Vendor
-                </Link>
-              </div>
-            </div>
-
-            {/* Event Attendance */}
-            <div className="bg-white rounded-xl shadow-lg p-8 border-2 border-gray-200 hover:border-gray-400 transition-colors">
-              <div className="text-center">
-                <div className="w-16 h-16 bg-gray-200 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <UserGroupIcon className="w-8 h-8 text-gray-800" />
-                </div>
-                <h3 className="text-2xl font-bold text-gray-800 mb-4">Event Attendance</h3>
-                <p className="text-gray-600 mb-6">
-                  Register to attend our events and stay updated on schedules, activities, and special announcements.
-                </p>
-                
-                <div className="bg-gray-50 rounded-lg p-4 mb-6">
-                  <h4 className="font-semibold text-gray-800 mb-2">Benefits:</h4>
-                  <ul className="text-sm text-gray-600 space-y-1">
-                    <li>• Event reminders</li>
-                    <li>• Activity schedules</li>
-                    <li>• Special announcements</li>
-                    <li>• Community updates</li>
-                  </ul>
-                </div>
-                
-                <Link
-                  href="/register/attendance"
-                  className="block w-full bg-gray-800 hover:bg-black text-white py-3 px-6 rounded-lg font-medium transition-colors text-center"
-                >
-                  Register to Attend
+                  Register Now
                 </Link>
               </div>
             </div>
@@ -120,134 +153,154 @@ export default function RegisterPage() {
         </div>
       </section>
 
-      {/* Featured Event Registration */}
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-gray-50 rounded-xl p-8 border-2 border-gray-300">
-            <div className="text-center">
-              <h2 className="text-3xl font-bold text-gray-800 mb-4">Pakistan Independence Day - Aug 31, 2025</h2>
-              <p className="text-lg text-gray-600 mb-8">
-                Our biggest celebration of the year! Limited vendor spaces available. Register early to secure your spot.
-              </p>
-              
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-                <div className="bg-white rounded-lg p-6 shadow-sm">
-                  <h3 className="text-lg font-semibold text-gray-800 mb-2">Event Details</h3>
-                  <div className="space-y-2 text-sm text-gray-600">
-                    <p><strong>Date:</strong> August 31, 2025</p>
-                    <p><strong>Time:</strong> 12:00 PM - 7:00 PM</p>
-                    <p><strong>Location:</strong> Central Park, Fremont</p>
-                    <p><strong>Expected Attendance:</strong> 500+ families</p>
-                  </div>
-                </div>
-                
-                <div className="bg-white rounded-lg p-6 shadow-sm">
-                  <h3 className="text-lg font-semibold text-gray-800 mb-2">Registration Deadline</h3>
-                  <div className="space-y-2 text-sm text-gray-600">
-                    <p><strong>Vendor Registration:</strong> July 15, 2025</p>
-                    <p><strong>Food Vendor:</strong> July 1, 2025</p>
-                    <p><strong>Attendance:</strong> August 28, 2025</p>
-                    <p><strong>Volunteer:</strong> August 20, 2025</p>
-                  </div>
-                </div>
+      {/* Featured Events */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-800 mb-4">Upcoming Events</h2>
+            <p className="text-lg text-gray-600">Don&apos;t miss these exciting community celebrations</p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Pakistan Independence Day */}
+            <div className="bg-white rounded-lg shadow-sm p-6 border-2 border-green-200">
+              <div className="h-48 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+                <span className="text-green-700 text-lg font-semibold">Pakistan Independence Day</span>
               </div>
-              
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link
-                  href="/register/vendor"
-                  className="bg-gray-800 hover:bg-black text-white px-8 py-3 rounded-lg font-medium transition-colors"
-                >
-                  Register as Vendor
-                </Link>
-                <Link
-                  href="/register/food-vendor"
-                  className="bg-gray-700 hover:bg-gray-800 text-white px-8 py-3 rounded-lg font-medium transition-colors"
-                >
-                  Register Food Vendor
-                </Link>
-                <Link
-                  href="/volunteer"
-                  className="bg-gray-600 hover:bg-gray-700 text-white px-8 py-3 rounded-lg font-medium transition-colors"
-                >
-                  Volunteer to Help
-                </Link>
+              <h3 className="text-xl font-bold text-gray-800 mb-2">Pakistan Independence Day Celebration</h3>
+              <p className="text-gray-600 mb-4">August 31, 2025 • 12:00 PM - 7:00 PM</p>
+              <p className="text-gray-600 mb-4">Join us for cultural performances, traditional food, and community unity.</p>
+              <Link
+                href="/events/pakistan-independence-day"
+                className="inline-block bg-green-700 hover:bg-green-800 text-white px-4 py-2 rounded-lg font-medium transition-colors"
+              >
+                Learn More
+              </Link>
+            </div>
+            
+            {/* Eid Festival */}
+            <div className="bg-white rounded-lg shadow-sm p-6 border-2 border-green-200">
+              <div className="h-48 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+                <span className="text-green-700 text-lg font-semibold">Eid Festival</span>
               </div>
+              <h3 className="text-xl font-bold text-gray-800 mb-2">Eid Festival 2025</h3>
+              <p className="text-gray-600 mb-4">April 15, 2025 • 10:00 AM - 5:00 PM</p>
+              <p className="text-gray-600 mb-4">Celebrate Eid with traditional festivities and community gathering.</p>
+              <Link
+                href="/events/eid-festival"
+                className="inline-block bg-green-700 hover:bg-green-800 text-white px-4 py-2 rounded-lg font-medium transition-colors"
+              >
+                Learn More
+              </Link>
+            </div>
+            
+            {/* Youth Sports Day */}
+            <div className="bg-white rounded-lg shadow-sm p-6 border-2 border-green-200">
+              <div className="h-48 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+                <span className="text-green-700 text-lg font-semibold">Youth Sports Day</span>
+              </div>
+              <h3 className="text-xl font-bold text-gray-800 mb-2">Youth Sports Day</h3>
+              <p className="text-gray-600 mb-4">March 22, 2025 • 9:00 AM - 4:00 PM</p>
+              <p className="text-gray-600 mb-4">Athletic competitions and team building activities for all ages.</p>
+              <Link
+                href="/events/youth-sports-day"
+                className="inline-block bg-green-700 hover:bg-green-800 text-white px-4 py-2 rounded-lg font-medium transition-colors"
+              >
+                Learn More
+              </Link>
             </div>
           </div>
         </div>
       </section>
 
       {/* Registration Guidelines */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-800 mb-4">Registration Guidelines</h2>
-            <p className="text-lg text-gray-600">Important information for all registrants</p>
+            <p className="text-lg text-gray-600">Important information for all participants</p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-white rounded-lg shadow-sm p-8">
-              <div className="flex items-center mb-4">
-                <DocumentTextIcon className="w-6 h-6 text-gray-600 mr-2" />
-                <h3 className="text-xl font-semibold text-gray-800">General Guidelines</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="text-center">
+              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <DocumentTextIcon className="w-8 h-8 text-green-700" />
               </div>
-              <ul className="space-y-2 text-gray-600">
-                <li>• All vendors must register before the deadline</li>
-                <li>• Setup begins 2 hours before event start</li>
-                <li>• All items must be family-friendly and appropriate</li>
-                <li>• No alcohol or inappropriate content allowed</li>
-                <li>• Vendors are responsible for their own insurance</li>
-                <li>• Rain or shine - events proceed unless severe weather</li>
-              </ul>
+              <h3 className="text-lg font-semibold text-gray-800 mb-2">Early Registration</h3>
+              <p className="text-gray-600 text-sm">Register at least 2 weeks before the event for guaranteed spot</p>
             </div>
             
-            <div className="bg-white rounded-lg shadow-sm p-8">
-              <div className="flex items-center mb-4">
-                <CakeIcon className="w-6 h-6 text-gray-600 mr-2" />
-                <h3 className="text-xl font-semibold text-gray-800">Food Vendor Requirements</h3>
+            <div className="text-center">
+              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-green-700 text-lg">📋</span>
               </div>
-              <ul className="space-y-2 text-gray-600">
-                <li>• Valid food handler&apos;s permit required</li>
-                <li>• Business license and liability insurance</li>
-                <li>• Health department approved menu</li>
-                <li>• Must provide own equipment and supplies</li>
-                <li>• Halal options strongly preferred</li>
-                <li>• Waste disposal and cleanup included</li>
-              </ul>
+              <h3 className="text-lg font-semibold text-gray-800 mb-2">Required Documents</h3>
+              <p className="text-gray-600 text-sm">Valid ID, business license (vendors), and insurance certificates</p>
+            </div>
+            
+            <div className="text-center">
+              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-green-700 text-lg">⏰</span>
+              </div>
+              <h3 className="text-lg font-semibold text-gray-800 mb-2">Setup Times</h3>
+              <p className="text-gray-600 text-sm">Vendors setup 2 hours before event start, cleanup 1 hour after</p>
+            </div>
+            
+            <div className="text-center">
+              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-green-700 text-lg">🚫</span>
+              </div>
+              <h3 className="text-lg font-semibold text-gray-800 mb-2">Prohibited Items</h3>
+              <p className="text-gray-600 text-sm">No alcohol, inappropriate content, or items not suitable for families</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* Contact Information */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-gray-800 mb-6">Need Help with Registration?</h2>
           <p className="text-lg text-gray-600 mb-8">
-            Our team is here to help with any questions about registration, requirements, or event details.
+            Our team is here to assist you with the registration process and answer any questions you may have.
           </p>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="bg-gray-50 rounded-lg p-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+            <div className="bg-white rounded-lg shadow-sm p-6">
+              <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-green-700 text-lg">📧</span>
+              </div>
               <h3 className="font-semibold text-gray-800 mb-2">Email</h3>
-              <p className="text-gray-600">vendors@eastbaymuslims.org</p>
+              <p className="text-gray-600">register@eastbaymuslims.org</p>
             </div>
-            <div className="bg-gray-50 rounded-lg p-6">
+            <div className="bg-white rounded-lg shadow-sm p-6">
+              <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-green-700 text-lg">📞</span>
+              </div>
               <h3 className="font-semibold text-gray-800 mb-2">Phone</h3>
               <p className="text-gray-600">(510)-734-2458</p>
             </div>
-            <div className="bg-gray-50 rounded-lg p-6">
+            <div className="bg-white rounded-lg shadow-sm p-6">
+              <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-green-700 text-lg">💬</span>
+              </div>
               <h3 className="font-semibold text-gray-800 mb-2">WhatsApp</h3>
-              <p className="text-gray-600">(510) 555-0124</p>
+              <p className="text-gray-600">(510) 555-0123</p>
             </div>
           </div>
           
-          <div className="mt-8">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/about/contact"
-              className="inline-block bg-gray-800 hover:bg-black text-white px-8 py-3 rounded-lg font-medium transition-colors"
+              className="bg-green-700 hover:bg-green-800 text-white px-8 py-3 rounded-lg font-medium transition-colors"
             >
               Contact Us
+            </Link>
+            <Link
+              href="/events"
+              className="bg-white border-2 border-green-700 text-green-700 hover:bg-green-50 px-8 py-3 rounded-lg font-medium transition-colors"
+            >
+              View All Events
             </Link>
           </div>
         </div>

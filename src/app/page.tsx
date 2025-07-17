@@ -46,13 +46,13 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="relative bg-gray-900 text-white py-20">
+      <section className="relative bg-green-900 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-4">
               East Bay Muslims
             </h1>
-            <h2 className="text-xl md:text-2xl mb-6 text-gray-300">
+            <h2 className="text-xl md:text-2xl mb-6 text-green-100">
               Family Festivals and Entertainment
             </h2>
             <p className="text-lg md:text-xl mb-8 max-w-3xl mx-auto">
@@ -60,22 +60,22 @@ export default function Home() {
             </p>
             
             {/* Featured Event Banner */}
-            <div className="bg-gray-800 bg-opacity-80 backdrop-blur-sm rounded-lg p-6 mb-8 max-w-4xl mx-auto">
+            <div className="bg-green-800 bg-opacity-80 backdrop-blur-sm rounded-lg p-6 mb-8 max-w-4xl mx-auto">
               <div className="flex items-center justify-center space-x-2 mb-2">
                 <span className="text-lg font-semibold">Featured Event</span>
               </div>
               <h3 className="text-2xl font-bold mb-2">{featuredEvent.title}</h3>
-              <p className="text-gray-300 mb-4">{featuredEvent.date} • {featuredEvent.time}</p>
+              <p className="text-green-100 mb-4">{featuredEvent.date} • {featuredEvent.time}</p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
                   href="/events"
-                  className="bg-white text-gray-900 hover:bg-gray-100 px-6 py-3 rounded-lg font-medium transition-colors"
+                  className="bg-white text-green-900 hover:bg-gray-100 px-6 py-3 rounded-lg font-medium transition-colors"
                 >
                   View Details
                 </Link>
                 <Link
                   href="/register"
-                  className="bg-gray-700 hover:bg-gray-600 text-white px-6 py-3 rounded-lg font-medium transition-colors"
+                  className="bg-green-700 hover:bg-green-600 text-white px-6 py-3 rounded-lg font-medium transition-colors"
                 >
                   Register Now
                 </Link>
@@ -84,7 +84,7 @@ export default function Home() {
 
             {/* Language Toggle */}
             <div className="flex justify-center">
-              <LanguageToggle className="bg-gray-800 bg-opacity-60 backdrop-blur-sm rounded-lg p-3" />
+              <LanguageToggle className="bg-green-800 bg-opacity-60 backdrop-blur-sm rounded-lg p-3" />
             </div>
           </div>
         </div>
@@ -99,22 +99,22 @@ export default function Home() {
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="w-16 h-16 bg-gray-200 rounded-full flex items-center justify-center mx-auto mb-4">
-                <UserGroupIcon className="w-8 h-8 text-gray-800" />
+              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <UserGroupIcon className="w-8 h-8 text-green-700" />
               </div>
               <h3 className="text-xl font-semibold text-gray-800 mb-2">Community Unity</h3>
               <p className="text-gray-600">Bringing families together through shared celebrations and cultural events</p>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 bg-gray-200 rounded-full flex items-center justify-center mx-auto mb-4">
-                <CalendarDaysIcon className="w-8 h-8 text-gray-800" />
+              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <CalendarDaysIcon className="w-8 h-8 text-green-700" />
               </div>
               <h3 className="text-xl font-semibold text-gray-800 mb-2">Cultural Heritage</h3>
               <p className="text-gray-600">Celebrating and preserving our traditions for future generations</p>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 bg-gray-200 rounded-full flex items-center justify-center mx-auto mb-4">
-                <HeartIcon className="w-8 h-8 text-gray-800" />
+              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <HeartIcon className="w-8 h-8 text-green-700" />
               </div>
               <h3 className="text-xl font-semibold text-gray-800 mb-2">Family Values</h3>
               <p className="text-gray-600">Creating safe, family-friendly environments for meaningful connections</p>
@@ -149,7 +149,7 @@ export default function Home() {
           <div className="text-center mt-12">
             <Link
               href="/events"
-              className="bg-gray-800 hover:bg-black text-white px-8 py-3 rounded-lg font-medium transition-colors inline-block"
+              className="bg-green-700 hover:bg-green-800 text-white px-8 py-3 rounded-lg font-medium transition-colors inline-block"
             >
               View All Events
             </Link>
@@ -166,28 +166,28 @@ export default function Home() {
       </section>
 
       {/* Call to Action */}
-      <section className="py-16 bg-gray-900 text-white">
+      <section className="py-16 bg-green-900 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold mb-6">Get Involved Today</h2>
-          <p className="text-lg mb-8 text-gray-300">
+          <p className="text-lg mb-8 text-green-100">
             Whether you want to volunteer, register for events, or simply stay connected with our community, we welcome you with open arms.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/volunteer"
-              className="bg-white text-gray-900 hover:bg-gray-100 px-8 py-3 rounded-lg font-medium transition-colors"
+              className="bg-white text-green-900 hover:bg-gray-100 px-8 py-3 rounded-lg font-medium transition-colors"
             >
               Become a Volunteer
             </Link>
             <Link
               href="/register"
-              className="bg-gray-700 hover:bg-gray-600 text-white px-8 py-3 rounded-lg font-medium transition-colors"
+              className="bg-green-700 hover:bg-green-600 text-white px-8 py-3 rounded-lg font-medium transition-colors"
             >
               Register for Events
             </Link>
             <Link
               href="/about/donate"
-              className="bg-transparent border-2 border-white hover:bg-white hover:text-gray-900 text-white px-8 py-3 rounded-lg font-medium transition-colors"
+              className="bg-transparent border-2 border-white hover:bg-white hover:text-green-900 text-white px-8 py-3 rounded-lg font-medium transition-colors"
             >
               Support Our Mission
             </Link>

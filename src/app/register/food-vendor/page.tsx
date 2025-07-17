@@ -1,344 +1,361 @@
 import Link from 'next/link';
-import { ArrowLeftIcon, CheckCircleIcon, CakeIcon, ShieldCheckIcon } from '@heroicons/react/24/outline';
+import { CheckCircleIcon, XMarkIcon, ClockIcon, DocumentTextIcon } from '@heroicons/react/24/outline';
 
 export default function FoodVendorRegistrationPage() {
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Navigation */}
-      <div className="bg-white shadow-sm">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-          <Link
-            href="/register"
-            className="flex items-center text-blue-600 hover:text-blue-700 transition-colors"
-          >
-            <ArrowLeftIcon className="w-5 h-5 mr-2" />
-            Back to Registration Options
-          </Link>
-        </div>
-      </div>
-
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-16">
+      <section className="bg-green-900 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <div className="w-20 h-20 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-6">
-              <CakeIcon className="w-10 h-10 text-white" />
-            </div>
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
               Food Vendor Registration
             </h1>
-            <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
-              Share your delicious cuisine with our community! Register to serve food and beverages at our events. All vendors must meet health and safety requirements.
+            <p className="text-xl text-green-100 mb-8 max-w-3xl mx-auto">
+              Share your delicious food and beverages with our community. Join our events as a food vendor and serve hundreds of families.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Registration Form Section */}
-      <section className="py-16">
+      {/* Pricing Information */}
+      <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-white rounded-xl shadow-lg p-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-800 mb-4">Food Vendor Pricing</h2>
+            <p className="text-lg text-gray-600">Competitive pricing for prime food service locations</p>
+          </div>
+          
+          <div className="bg-green-50 rounded-xl p-8 border-2 border-green-200">
             <div className="text-center mb-8">
-              <h2 className="text-3xl font-bold text-gray-800 mb-4">Complete Your Food Vendor Registration</h2>
-              <p className="text-lg text-gray-600">
-                Please fill out the form below to register as a food vendor for our events
-              </p>
+              <div className="text-6xl font-bold text-green-700 mb-2">$350</div>
+              <p className="text-xl text-gray-600 mb-4">Per event registration</p>
+              <p className="text-gray-600">Premium food service package with all essentials included</p>
             </div>
             
-            {/* Google Form Embed */}
-            <div className="bg-gray-50 rounded-lg p-6 mb-8">
-              <div className="text-center">
-                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-blue-600 text-2xl">📝</span>
-                </div>
-                <h3 className="text-xl font-semibold text-gray-800 mb-2">Food Vendor Registration Form</h3>
-                <p className="text-gray-600 mb-6">
-                  Click the button below to access our Google Form for food vendor registration
-                </p>
-                <a
-                  href="https://forms.google.com/create-food-vendor-registration-form"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-medium transition-colors"
-                >
-                  Open Food Vendor Form
-                </a>
-              </div>
-            </div>
-
-            {/* Form Fields Preview */}
-            <div className="bg-purple-50 rounded-lg p-6">
-              <h3 className="text-lg font-semibold text-gray-800 mb-4">📋 Required Information</h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div>
-                  <h4 className="font-medium text-gray-700 mb-2">Business & Permits</h4>
-                  <ul className="text-sm text-gray-600 space-y-1">
-                    <li>• Food handler&apos;s permit</li>
-                    <li>• Business license</li>
-                    <li>• Liability insurance</li>
-                    <li>• Health department approval</li>
-                  </ul>
-                </div>
-                <div>
-                  <h4 className="font-medium text-gray-700 mb-2">Menu & Equipment</h4>
-                  <ul className="text-sm text-gray-600 space-y-1">
-                    <li>• Complete menu with prices</li>
-                    <li>• Equipment list</li>
-                    <li>• Halal certification (if applicable)</li>
-                    <li>• Special dietary options</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Health Requirements */}
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-800 mb-4">Health & Safety Requirements</h2>
-            <p className="text-lg text-gray-600">All food vendors must comply with local health regulations</p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-red-50 rounded-lg p-8 border-2 border-red-200">
-              <div className="flex items-center mb-4">
-                <ShieldCheckIcon className="w-6 h-6 text-red-600 mr-2" />
-                <h3 className="text-xl font-semibold text-gray-800">Required Permits</h3>
-              </div>
-              <ul className="space-y-2 text-gray-600">
-                <li>• Valid food handler&apos;s permit for all staff</li>
-                <li>• Current business license</li>
-                <li>• General liability insurance ($1M minimum)</li>
-                <li>• Health department mobile vendor permit</li>
-                <li>• Fire department approval (if applicable)</li>
-                <li>• Resale permit or tax registration</li>
-              </ul>
-            </div>
-            
-            <div className="bg-blue-50 rounded-lg p-8 border-2 border-blue-200">
-              <div className="flex items-center mb-4">
-                <CheckCircleIcon className="w-6 h-6 text-blue-600 mr-2" />
-                <h3 className="text-xl font-semibold text-gray-800">Health Standards</h3>
-              </div>
-              <ul className="space-y-2 text-gray-600">
-                <li>• Temperature control for all food items</li>
-                <li>• Proper food storage and handling</li>
-                <li>• Hand washing stations available</li>
-                <li>• Sanitizer and cleaning supplies</li>
-                <li>• Hair restraints and gloves</li>
-                <li>• Waste disposal plan</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* What's Included */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-800 mb-4">What&apos;s Included in Your Registration</h2>
-            <p className="text-lg text-gray-600">Everything you need for a successful food service experience</p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-white rounded-lg shadow-sm p-6">
-              <div className="text-center">
-                <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-blue-600 text-xl">🏪</span>
-                </div>
-                <h3 className="text-lg font-semibold text-gray-800 mb-2">Booth Space</h3>
-                <p className="text-gray-600 text-sm">
-                  12x12 foot booth space with access to electricity and water connections for food preparation.
-                </p>
-              </div>
-            </div>
-            
-            <div className="bg-white rounded-lg shadow-sm p-6">
-              <div className="text-center">
-                <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-green-600 text-xl">🗑️</span>
-                </div>
-                <h3 className="text-lg font-semibold text-gray-800 mb-2">Waste Management</h3>
-                <p className="text-gray-600 text-sm">
-                  Trash and recycling collection throughout the event, plus grease disposal services.
-                </p>
-              </div>
-            </div>
-            
-            <div className="bg-white rounded-lg shadow-sm p-6">
-              <div className="text-center">
-                <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-purple-600 text-xl">📍</span>
-                </div>
-                <h3 className="text-lg font-semibold text-gray-800 mb-2">Prime Location</h3>
-                <p className="text-gray-600 text-sm">
-                  Featured placement on event food map and highlighted in promotional materials.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Pricing Section */}
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-800 mb-4">Food Vendor Fees</h2>
-            <p className="text-lg text-gray-600">Investment in your community presence</p>
-          </div>
-          
-          <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl p-8 border-2 border-blue-200">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="text-center">
-                <h3 className="text-2xl font-bold text-gray-800 mb-4">💰 Standard Events</h3>
-                <div className="text-4xl font-bold text-blue-600 mb-2">$350</div>
-                <p className="text-gray-600 mb-4">Per event registration</p>
-                <ul className="text-left text-sm text-gray-600 space-y-1">
-                  <li>✓ 12x12 booth space</li>
-                  <li>✓ Power and water access</li>
-                  <li>✓ Waste management</li>
-                  <li>✓ Featured on food map</li>
+              <div className="bg-white rounded-lg p-6">
+                <h3 className="text-lg font-semibold text-gray-800 mb-4">What&apos;s Included</h3>
+                <ul className="space-y-3">
+                  <li className="flex items-center">
+                    <CheckCircleIcon className="w-5 h-5 text-green-600 mr-3" />
+                    <span className="text-gray-700">10x10 ft booth space</span>
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircleIcon className="w-5 h-5 text-green-600 mr-3" />
+                    <span className="text-gray-700">Power connection (110V outlet)</span>
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircleIcon className="w-5 h-5 text-green-600 mr-3" />
+                    <span className="text-gray-700">Water access nearby</span>
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircleIcon className="w-5 h-5 text-green-600 mr-3" />
+                    <span className="text-gray-700">Waste disposal and cleanup</span>
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircleIcon className="w-5 h-5 text-green-600 mr-3" />
+                    <span className="text-gray-700">Featured on event food map</span>
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircleIcon className="w-5 h-5 text-green-600 mr-3" />
+                    <span className="text-gray-700">High-traffic location</span>
+                  </li>
                 </ul>
               </div>
               
-              <div className="text-center">
-                <h3 className="text-2xl font-bold text-gray-800 mb-4">Special Events</h3>
-                <div className="text-4xl font-bold text-purple-600 mb-2">$350</div>
-                <p className="text-gray-600 mb-4">Pakistan Independence Day</p>
-                <ul className="text-left text-sm text-gray-600 space-y-1">
-                  <li>✓ Premium booth location</li>
-                  <li>✓ Enhanced promotion</li>
-                  <li>✓ 500+ expected attendees</li>
-                  <li>✓ All standard inclusions</li>
+              <div className="bg-white rounded-lg p-6">
+                <h3 className="text-lg font-semibold text-gray-800 mb-4">Food Categories</h3>
+                <ul className="space-y-3">
+                  <li className="flex items-center">
+                    <div className="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
+                    <span className="text-gray-700">Traditional Pakistani cuisine</span>
+                  </li>
+                  <li className="flex items-center">
+                    <div className="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
+                    <span className="text-gray-700">Halal food options</span>
+                  </li>
+                  <li className="flex items-center">
+                    <div className="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
+                    <span className="text-gray-700">Beverages and drinks</span>
+                  </li>
+                  <li className="flex items-center">
+                    <div className="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
+                    <span className="text-gray-700">Desserts and sweets</span>
+                  </li>
+                  <li className="flex items-center">
+                    <div className="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
+                    <span className="text-gray-700">Snacks and appetizers</span>
+                  </li>
                 </ul>
               </div>
             </div>
             
             <div className="text-center mt-8">
-              <p className="text-gray-600 mb-4">
-                Higher fees reflect additional infrastructure needs for food service. Payment due within 7 days of approval.
-              </p>
-              <div className="flex flex-wrap justify-center gap-4">
-                <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-sm">💳 PayPal</span>
-                <span className="bg-purple-600 text-white px-3 py-1 rounded-full text-sm">📱 Zelle</span>
-                <span className="bg-blue-500 text-white px-3 py-1 rounded-full text-sm">💰 Venmo</span>
-                <span className="bg-indigo-600 text-white px-3 py-1 rounded-full text-sm">🏦 Stripe</span>
-              </div>
+              <Link
+                href="/register/food-vendor/form"
+                className="inline-block bg-green-700 hover:bg-green-800 text-white px-8 py-3 rounded-lg font-medium transition-colors"
+              >
+                Register Now
+              </Link>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Menu Guidelines */}
+      {/* Health & Safety Requirements */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-800 mb-4">Menu Guidelines</h2>
-            <p className="text-lg text-gray-600">Creating a diverse and inclusive food experience</p>
+            <h2 className="text-3xl font-bold text-gray-800 mb-4">Health & Safety Requirements</h2>
+            <p className="text-lg text-gray-600">All food vendors must meet these requirements</p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-white rounded-lg shadow-sm p-8">
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">🥗 Preferred Options</h3>
-              <ul className="space-y-2 text-gray-600">
-                <li>• Halal-certified food options</li>
-                <li>• Traditional Pakistani and South Asian cuisine</li>
-                <li>• Vegetarian and vegan options</li>
-                <li>• Family-friendly portion sizes</li>
-                <li>• Authentic cultural dishes</li>
-                <li>• Fresh, made-to-order items</li>
+            <div className="bg-white rounded-lg shadow-sm p-6">
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">Required Permits & Licenses</h3>
+              <ul className="space-y-3">
+                <li className="flex items-start">
+                  <DocumentTextIcon className="w-5 h-5 text-green-600 mr-3 mt-0.5" />
+                                     <span className="text-gray-700">Valid food handler&apos;s permit</span>
+                </li>
+                <li className="flex items-start">
+                  <DocumentTextIcon className="w-5 h-5 text-green-600 mr-3 mt-0.5" />
+                  <span className="text-gray-700">Business license</span>
+                </li>
+                <li className="flex items-start">
+                  <DocumentTextIcon className="w-5 h-5 text-green-600 mr-3 mt-0.5" />
+                  <span className="text-gray-700">Liability insurance ($2M minimum)</span>
+                </li>
+                <li className="flex items-start">
+                  <DocumentTextIcon className="w-5 h-5 text-green-600 mr-3 mt-0.5" />
+                  <span className="text-gray-700">Health department approval</span>
+                </li>
               </ul>
             </div>
             
-            <div className="bg-white rounded-lg shadow-sm p-8">
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">📋 Requirements</h3>
-              <ul className="space-y-2 text-gray-600">
-                <li>• Clear ingredient labeling</li>
-                <li>• Allergen information available</li>
-                <li>• No alcohol in food preparation</li>
-                <li>• Competitive community pricing</li>
-                <li>• Consistent quality standards</li>
-                <li>• Professional food presentation</li>
+            <div className="bg-white rounded-lg shadow-sm p-6">
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">Food Safety Standards</h3>
+              <ul className="space-y-3">
+                <li className="flex items-start">
+                  <CheckCircleIcon className="w-5 h-5 text-green-600 mr-3 mt-0.5" />
+                  <span className="text-gray-700">Temperature control for perishables</span>
+                </li>
+                <li className="flex items-start">
+                  <CheckCircleIcon className="w-5 h-5 text-green-600 mr-3 mt-0.5" />
+                  <span className="text-gray-700">Proper food storage containers</span>
+                </li>
+                <li className="flex items-start">
+                  <CheckCircleIcon className="w-5 h-5 text-green-600 mr-3 mt-0.5" />
+                  <span className="text-gray-700">Hand washing and sanitizing stations</span>
+                </li>
+                <li className="flex items-start">
+                  <CheckCircleIcon className="w-5 h-5 text-green-600 mr-3 mt-0.5" />
+                  <span className="text-gray-700">Clean cooking and serving equipment</span>
+                </li>
               </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Event Schedule */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-800 mb-4">Select Your Events</h2>
+            <p className="text-lg text-gray-600">Choose which events you&apos;d like to serve food at</p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="bg-green-50 rounded-lg p-6 border-2 border-green-200">
+              <div className="text-center mb-6">
+                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-green-700 text-lg">🇵🇰</span>
+                </div>
+                <h3 className="text-xl font-bold text-gray-800 mb-2">Pakistan Independence Day</h3>
+                <p className="text-gray-600 text-sm">August 31, 2025</p>
+              </div>
+              <div className="space-y-2 text-sm text-gray-600 mb-6">
+                <p><strong>Duration:</strong> 7 hours</p>
+                <p><strong>Peak Hours:</strong> 1:00 PM - 4:00 PM</p>
+                <p><strong>Expected Sales:</strong> High demand</p>
+                <p><strong>Food Vendors:</strong> 15 spots available</p>
+              </div>
+              <button className="w-full bg-green-700 hover:bg-green-800 text-white py-2 px-4 rounded-lg font-medium transition-colors">
+                Select This Event
+              </button>
+            </div>
+            
+            <div className="bg-green-50 rounded-lg p-6 border-2 border-green-200">
+              <div className="text-center mb-6">
+                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-green-700 text-lg">🌙</span>
+                </div>
+                <h3 className="text-xl font-bold text-gray-800 mb-2">Eid Festival</h3>
+                <p className="text-gray-600 text-sm">April 15, 2025</p>
+              </div>
+              <div className="space-y-2 text-sm text-gray-600 mb-6">
+                <p><strong>Duration:</strong> 7 hours</p>
+                <p><strong>Peak Hours:</strong> 12:00 PM - 3:00 PM</p>
+                <p><strong>Expected Sales:</strong> Medium-high demand</p>
+                <p><strong>Food Vendors:</strong> 10 spots available</p>
+              </div>
+              <button className="w-full bg-green-700 hover:bg-green-800 text-white py-2 px-4 rounded-lg font-medium transition-colors">
+                Select This Event
+              </button>
+            </div>
+            
+            <div className="bg-green-50 rounded-lg p-6 border-2 border-green-200">
+              <div className="text-center mb-6">
+                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-green-700 text-lg">⚽</span>
+                </div>
+                <h3 className="text-xl font-bold text-gray-800 mb-2">Youth Sports Day</h3>
+                <p className="text-gray-600 text-sm">March 22, 2025</p>
+              </div>
+              <div className="space-y-2 text-sm text-gray-600 mb-6">
+                <p><strong>Duration:</strong> 7 hours</p>
+                <p><strong>Peak Hours:</strong> 11:00 AM - 2:00 PM</p>
+                <p><strong>Expected Sales:</strong> Medium demand</p>
+                <p><strong>Food Vendors:</strong> 8 spots available</p>
+              </div>
+              <button className="w-full bg-green-700 hover:bg-green-800 text-white py-2 px-4 rounded-lg font-medium transition-colors">
+                Select This Event
+              </button>
             </div>
           </div>
         </div>
       </section>
 
       {/* Equipment & Setup */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-800 mb-4">Equipment & Setup</h2>
-            <p className="text-lg text-gray-600">What you need to bring and what we provide</p>
+            <h2 className="text-3xl font-bold text-gray-800 mb-4">Setup & Equipment Information</h2>
+            <p className="text-lg text-gray-600">Everything you need to know about food vendor setup</p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-green-50 rounded-lg p-8 border-2 border-green-200">
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">✅ We Provide</h3>
-              <ul className="space-y-2 text-gray-600">
-                <li>• 12x12 foot booth space</li>
-                <li>• Electrical connections (110V)</li>
-                <li>• Water spigot access</li>
-                <li>• Waste disposal service</li>
-                <li>• Event tables and basic setup</li>
-                <li>• Promotional signage space</li>
-              </ul>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-white rounded-lg shadow-sm p-6 text-center">
+              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <ClockIcon className="w-8 h-8 text-green-700" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-800 mb-4">Setup Schedule</h3>
+              <div className="text-left text-sm text-gray-600 space-y-2">
+                <p><strong>Arrival:</strong> 3 hours before event</p>
+                <p><strong>Setup:</strong> 2.5 hours for equipment</p>
+                <p><strong>Inspection:</strong> 30 minutes before opening</p>
+                <p><strong>Service:</strong> Throughout event duration</p>
+              </div>
             </div>
             
-            <div className="bg-orange-50 rounded-lg p-8 border-2 border-orange-200">
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">📦 You Bring</h3>
-              <ul className="space-y-2 text-gray-600">
-                <li>• All cooking equipment and appliances</li>
-                <li>• Food preparation and serving supplies</li>
-                <li>• Tent/canopy for weather protection</li>
-                <li>• Extension cords and power strips</li>
-                <li>• Cleaning supplies and sanitizer</li>
-                <li>• Cash register or payment system</li>
+            <div className="bg-white rounded-lg shadow-sm p-6 text-center">
+              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-green-700 text-lg">🔌</span>
+              </div>
+              <h3 className="text-xl font-bold text-gray-800 mb-4">Power & Utilities</h3>
+              <div className="text-left text-sm text-gray-600 space-y-2">
+                <p><strong>Electricity:</strong> 110V, 20A circuit</p>
+                <p><strong>Water:</strong> Available within 50 feet</p>
+                <p><strong>Waste:</strong> Disposal stations provided</p>
+                <p><strong>Grease:</strong> Proper disposal required</p>
+              </div>
+            </div>
+            
+            <div className="bg-white rounded-lg shadow-sm p-6 text-center">
+              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-green-700 text-lg">🧹</span>
+              </div>
+              <h3 className="text-xl font-bold text-gray-800 mb-4">Cleanup Requirements</h3>
+              <div className="text-left text-sm text-gray-600 space-y-2">
+                <p><strong>Equipment:</strong> Clean all cooking surfaces</p>
+                <p><strong>Booth Area:</strong> Remove all food debris</p>
+                <p><strong>Grease:</strong> Collect and dispose properly</p>
+                <p><strong>Timing:</strong> 1 hour after event ends</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Prohibited Items */}
+      <section className="py-16 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-800 mb-4">Food & Beverage Restrictions</h2>
+            <p className="text-lg text-gray-600">Items that cannot be served at our family-friendly events</p>
+          </div>
+          
+          <div className="bg-red-50 rounded-lg p-6 border-2 border-red-200">
+            <h3 className="text-xl font-semibold text-gray-800 mb-4">Prohibited Items</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <ul className="space-y-3">
+                <li className="flex items-start">
+                  <XMarkIcon className="w-5 h-5 text-red-600 mr-3 mt-0.5" />
+                  <span className="text-gray-700">Alcoholic beverages of any kind</span>
+                </li>
+                <li className="flex items-start">
+                  <XMarkIcon className="w-5 h-5 text-red-600 mr-3 mt-0.5" />
+                  <span className="text-gray-700">Pork products or non-halal meat</span>
+                </li>
+                <li className="flex items-start">
+                  <XMarkIcon className="w-5 h-5 text-red-600 mr-3 mt-0.5" />
+                  <span className="text-gray-700">Extremely spicy foods (ghost peppers, etc.)</span>
+                </li>
+              </ul>
+              <ul className="space-y-3">
+                <li className="flex items-start">
+                  <XMarkIcon className="w-5 h-5 text-red-600 mr-3 mt-0.5" />
+                  <span className="text-gray-700">Foods with peanuts (allergy concerns)</span>
+                </li>
+                <li className="flex items-start">
+                  <XMarkIcon className="w-5 h-5 text-red-600 mr-3 mt-0.5" />
+                  <span className="text-gray-700">Homemade items without proper permits</span>
+                </li>
+                <li className="flex items-start">
+                  <XMarkIcon className="w-5 h-5 text-red-600 mr-3 mt-0.5" />
+                  <span className="text-gray-700">Items requiring special handling or storage</span>
+                </li>
               </ul>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Contact Section */}
-      <section className="py-16 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
+      {/* Contact Information */}
+      <section className="py-16 bg-green-900 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold mb-6">Food Vendor Support</h2>
-          <p className="text-lg mb-8 text-blue-100">
-            Our food coordinator is here to help with permits, setup, and any questions about food service requirements.
+          <p className="text-lg mb-8 text-green-100">
+            Our food vendor coordinator is here to help with permits, setup, and any questions about food service requirements.
           </p>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
             <div className="bg-white bg-opacity-10 rounded-lg p-6">
               <h3 className="font-semibold mb-2">📧 Email</h3>
-              <p className="text-blue-100">food@eastbaymuslims.org</p>
+              <p className="text-green-100">foodvendors@eastbaymuslims.org</p>
             </div>
             <div className="bg-white bg-opacity-10 rounded-lg p-6">
               <h3 className="font-semibold mb-2">📞 Phone</h3>
-              <p className="text-blue-100">(510) 555-0125</p>
+              <p className="text-green-100">(510)-734-2458</p>
             </div>
             <div className="bg-white bg-opacity-10 rounded-lg p-6">
               <h3 className="font-semibold mb-2">💬 WhatsApp</h3>
-              <p className="text-blue-100">(510) 555-0126</p>
+              <p className="text-green-100">(510) 555-0125</p>
             </div>
           </div>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/about/contact"
-              className="bg-white text-blue-600 hover:bg-blue-50 px-8 py-3 rounded-lg font-medium transition-colors"
+              className="bg-white text-green-900 hover:bg-green-50 px-8 py-3 rounded-lg font-medium transition-colors"
             >
               Contact Us
             </Link>
             <Link
               href="/register"
-              className="bg-blue-500 hover:bg-blue-400 text-white px-8 py-3 rounded-lg font-medium transition-colors"
+              className="bg-green-700 hover:bg-green-600 text-white px-8 py-3 rounded-lg font-medium transition-colors"
             >
               Other Registration Options
             </Link>

@@ -12,35 +12,25 @@ interface Photo {
 
 interface PhotoSliderProps {
   photos: Photo[];
-  autoSlide?: boolean;
-  slideInterval?: number;
 }
 
-const PhotoSlider: React.FC<PhotoSliderProps> = ({ 
-  photos, 
-  autoSlide = true, 
-  slideInterval = 5000 
-}) => {
+const PhotoSlider: React.FC<PhotoSliderProps> = ({ photos }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
-    if (autoSlide && photos.length > 1) {
-      const interval = setInterval(() => {
-        setCurrentIndex((prevIndex) => 
-          prevIndex === photos.length - 1 ? 0 : prevIndex + 1
-        );
-      }, slideInterval);
-      
-      return () => clearInterval(interval);
-    }
-  }, [autoSlide, photos.length, slideInterval]);
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % photos.length);
+    }, 5000); // Change photo every 5 seconds
+
+    return () => clearInterval(interval);
+  }, [photos.length]);
 
   const goToPrevious = () => {
-    setCurrentIndex(currentIndex === 0 ? photos.length - 1 : currentIndex - 1);
+    setCurrentIndex((prevIndex) => (prevIndex - 1 + photos.length) % photos.length);
   };
 
   const goToNext = () => {
-    setCurrentIndex(currentIndex === photos.length - 1 ? 0 : currentIndex + 1);
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % photos.length);
   };
 
   const goToSlide = (index: number) => {
@@ -49,12 +39,8 @@ const PhotoSlider: React.FC<PhotoSliderProps> = ({
 
   if (!photos || photos.length === 0) {
     return (
-      <div className="relative w-full h-96 bg-gradient-to-r from-green-400 to-blue-500 rounded-lg flex items-center justify-center">
-        <div className="text-center text-white">
-          <span className="text-6xl mb-4 block">📸</span>
-          <h3 className="text-xl font-semibold">Festival Photos Coming Soon</h3>
-          <p className="text-green-100 mt-2">Check back for beautiful moments from our events</p>
-        </div>
+      <div className="w-full h-96 bg-gray-100 rounded-lg flex items-center justify-center">
+        <p className="text-gray-500">No photos available</p>
       </div>
     );
   }
@@ -64,14 +50,14 @@ const PhotoSlider: React.FC<PhotoSliderProps> = ({
       {/* Main Photo */}
       <div className="relative w-full h-full">
         <div 
-          className="w-full h-full bg-gradient-to-r from-green-400 to-blue-500 flex items-center justify-center"
+          className="w-full h-full bg-green-700 flex items-center justify-center"
           style={{ 
             backgroundImage: `url(${photos[currentIndex]?.url})`,
             backgroundSize: 'cover',
             backgroundPosition: 'center'
           }}
         >
-          <span className="text-white text-6xl">🎉</span>
+          <span className="text-white text-6xl">📸</span>
         </div>
         
         {/* Overlay for better text readability */}
@@ -114,10 +100,8 @@ const PhotoSlider: React.FC<PhotoSliderProps> = ({
             <button
               key={index}
               onClick={() => goToSlide(index)}
-              className={`w-2 h-2 rounded-full transition-all duration-200 ${
-                index === currentIndex 
-                  ? 'bg-white' 
-                  : 'bg-white bg-opacity-50 hover:bg-opacity-75'
+              className={`w-2 h-2 rounded-full transition-colors duration-200 ${
+                index === currentIndex ? 'bg-white' : 'bg-white bg-opacity-50'
               }`}
             />
           ))}
