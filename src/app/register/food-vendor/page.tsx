@@ -73,7 +73,7 @@ export default function FoodVendorRegistrationPage() {
                 <div>
                   <h4 className="font-medium text-gray-700 mb-2">Business & Permits</h4>
                   <ul className="text-sm text-gray-600 space-y-1">
-                    <li>• Food handler's permit</li>
+                    <li>• Food handler&apos;s permit</li>
                     <li>• Business license</li>
                     <li>• Liability insurance</li>
                     <li>• Health department approval</li>
@@ -109,7 +109,7 @@ export default function FoodVendorRegistrationPage() {
                 <h3 className="text-xl font-semibold text-gray-800">Required Permits</h3>
               </div>
               <ul className="space-y-2 text-gray-600">
-                <li>• Valid food handler's permit for all staff</li>
+                <li>• Valid food handler&apos;s permit for all staff</li>
                 <li>• Current business license</li>
                 <li>• General liability insurance ($1M minimum)</li>
                 <li>• Health department mobile vendor permit</li>
@@ -140,7 +140,7 @@ export default function FoodVendorRegistrationPage() {
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-800 mb-4">What's Included in Your Registration</h2>
+            <h2 className="text-3xl font-bold text-gray-800 mb-4">What&apos;s Included in Your Registration</h2>
             <p className="text-lg text-gray-600">Everything you need for a successful food service experience</p>
           </div>
           

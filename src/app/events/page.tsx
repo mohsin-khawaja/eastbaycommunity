@@ -91,7 +91,7 @@ export default function EventsPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-800 mb-4">🎊 Featured Event</h2>
-            <p className="text-lg text-gray-600">Don't miss our biggest celebration of the year!</p>
+            <p className="text-lg text-gray-600">Don&apos;t miss our biggest celebration of the year!</p>
           </div>
           
           <div className="max-w-4xl mx-auto">
@@ -225,7 +225,7 @@ export default function EventsPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold mb-6">Ready to Join Us?</h2>
           <p className="text-lg mb-8 text-green-100">
-            Register for upcoming events, volunteer to help, or become a vendor at our festivals. There's a place for everyone in our community!
+            Register for upcoming events, volunteer to help, or become a vendor at our festivals. There&apos;s a place for everyone in our community!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

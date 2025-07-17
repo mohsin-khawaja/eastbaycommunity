@@ -106,7 +106,7 @@ export default function VendorRegistrationPage() {
             <div className="bg-gray-50 rounded-lg p-8">
               <div className="flex items-center mb-4">
                 <CheckCircleIcon className="w-6 h-6 text-green-600 mr-2" />
-                <h3 className="text-xl font-semibold text-gray-800">What's Included</h3>
+                <h3 className="text-xl font-semibold text-gray-800">What&apos;s Included</h3>
               </div>
               <ul className="space-y-2 text-gray-600">
                 <li>• 10x10 foot booth space</li>

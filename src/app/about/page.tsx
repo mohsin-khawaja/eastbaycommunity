@@ -23,7 +23,7 @@ export default function AboutPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-800 mb-4">📖 Our Story & Vision</h2>
-            <p className="text-lg text-gray-600">How we started and where we're heading</p>
+            <p className="text-lg text-gray-600">How we started and where we&apos;re heading</p>
           </div>
           
           <div className="prose prose-lg max-w-none">
@@ -350,7 +350,7 @@ export default function AboutPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold mb-6">Join Our Community</h2>
           <p className="text-lg mb-8 text-green-100">
-            Whether you want to attend events, volunteer, or support our mission, there's a place for you in our community.
+            Whether you want to attend events, volunteer, or support our mission, there&apos;s a place for you in our community.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

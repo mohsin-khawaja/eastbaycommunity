@@ -207,7 +207,7 @@ export default function RegisterPage() {
                 <h3 className="text-xl font-semibold text-gray-800">Food Vendor Requirements</h3>
               </div>
               <ul className="space-y-2 text-gray-600">
-                <li>• Valid food handler's permit required</li>
+                <li>• Valid food handler&apos;s permit required</li>
                 <li>• Business license and liability insurance</li>
                 <li>• Health department approved menu</li>
                 <li>• Must provide own equipment and supplies</li>
