@@ -5,13 +5,13 @@ export default function AboutPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-green-600 to-blue-600 text-white py-20">
+      <section className="bg-gray-900 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
               About East Bay Muslims
             </h1>
-            <p className="text-xl md:text-2xl mb-8 max-w-4xl mx-auto text-green-100">
+            <p className="text-xl md:text-2xl mb-8 max-w-4xl mx-auto text-gray-300">
               We are a nonprofit organization rooted in purpose and unity, dedicated to bringing together the East Bay Muslim community through family-friendly festivals and meaningful connections.
             </p>
           </div>
@@ -27,7 +27,7 @@ export default function AboutPage() {
           </div>
           
           <div className="prose prose-lg max-w-none">
-            <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-xl p-8 border-2 border-green-200 mb-8">
+            <div className="bg-gray-50 rounded-xl p-8 border-2 border-gray-300 mb-8">
               <h3 className="text-2xl font-bold text-gray-800 mb-4">Our Beginning</h3>
               <p className="text-gray-700 mb-4">
                 East Bay Muslims was founded in 2018 by a group of dedicated community members who recognized the need for regular, family-friendly gatherings that would bring together Muslim families from across the East Bay area. What started as small informal gatherings has grown into a vibrant nonprofit organization that serves hundreds of families throughout the region.
@@ -66,8 +66,8 @@ export default function AboutPage() {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white rounded-lg shadow-sm p-8 text-center">
-              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <UserGroupIcon className="w-8 h-8 text-green-600" />
+              <div className="w-16 h-16 bg-gray-200 rounded-full flex items-center justify-center mx-auto mb-4">
+                <UserGroupIcon className="w-8 h-8 text-gray-800" />
               </div>
               <h3 className="text-xl font-bold text-gray-800 mb-4">Unity & Inclusion</h3>
               <p className="text-gray-600">
@@ -76,8 +76,8 @@ export default function AboutPage() {
             </div>
             
             <div className="bg-white rounded-lg shadow-sm p-8 text-center">
-              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <HeartIcon className="w-8 h-8 text-blue-600" />
+              <div className="w-16 h-16 bg-gray-200 rounded-full flex items-center justify-center mx-auto mb-4">
+                <HeartIcon className="w-8 h-8 text-gray-800" />
               </div>
               <h3 className="text-xl font-bold text-gray-800 mb-4">Family First</h3>
               <p className="text-gray-600">
@@ -86,8 +86,8 @@ export default function AboutPage() {
             </div>
             
             <div className="bg-white rounded-lg shadow-sm p-8 text-center">
-              <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-purple-600 text-2xl">🌟</span>
+              <div className="w-16 h-16 bg-gray-200 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-gray-800 text-2xl">🌟</span>
               </div>
               <h3 className="text-xl font-bold text-gray-800 mb-4">Excellence</h3>
               <p className="text-gray-600">
@@ -108,44 +108,44 @@ export default function AboutPage() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="bg-gray-50 rounded-lg p-6 text-center">
-              <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-green-600 text-2xl font-bold">AK</span>
+              <div className="w-20 h-20 bg-gray-300 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-gray-800 text-2xl font-bold">AK</span>
               </div>
               <h3 className="text-lg font-bold text-gray-800 mb-2">Ahmed Khan</h3>
-              <p className="text-sm text-green-600 mb-2">Founder & President</p>
+              <p className="text-sm text-gray-700 mb-2">Founder & President</p>
               <p className="text-xs text-gray-600">
                 Event planning and community outreach
               </p>
             </div>
             
             <div className="bg-gray-50 rounded-lg p-6 text-center">
-              <div className="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-blue-600 text-2xl font-bold">SA</span>
+              <div className="w-20 h-20 bg-gray-300 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-gray-800 text-2xl font-bold">SA</span>
               </div>
               <h3 className="text-lg font-bold text-gray-800 mb-2">Sarah Ali</h3>
-              <p className="text-sm text-blue-600 mb-2">Vice President</p>
+              <p className="text-sm text-gray-700 mb-2">Vice President</p>
               <p className="text-xs text-gray-600">
                 Vendor coordination and logistics
               </p>
             </div>
             
             <div className="bg-gray-50 rounded-lg p-6 text-center">
-              <div className="w-20 h-20 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-purple-600 text-2xl font-bold">MH</span>
+              <div className="w-20 h-20 bg-gray-300 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-gray-800 text-2xl font-bold">MH</span>
               </div>
               <h3 className="text-lg font-bold text-gray-800 mb-2">Maria Hassan</h3>
-              <p className="text-sm text-purple-600 mb-2">Events Coordinator</p>
+              <p className="text-sm text-gray-700 mb-2">Events Coordinator</p>
               <p className="text-xs text-gray-600">
                 Cultural programming and activities
               </p>
             </div>
             
             <div className="bg-gray-50 rounded-lg p-6 text-center">
-              <div className="w-20 h-20 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-orange-600 text-2xl font-bold">OS</span>
+              <div className="w-20 h-20 bg-gray-300 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-gray-800 text-2xl font-bold">OS</span>
               </div>
               <h3 className="text-lg font-bold text-gray-800 mb-2">Omar Shah</h3>
-              <p className="text-sm text-orange-600 mb-2">Treasurer</p>
+              <p className="text-sm text-gray-700 mb-2">Treasurer</p>
               <p className="text-xs text-gray-600">
                 Financial management and sponsorships
               </p>
@@ -159,7 +159,7 @@ export default function AboutPage() {
             </p>
             <Link
               href="/volunteer"
-              className="inline-block bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-lg font-medium transition-colors"
+              className="inline-block bg-gray-800 hover:bg-black text-white px-8 py-3 rounded-lg font-medium transition-colors"
             >
               Volunteer with Us
             </Link>
@@ -181,23 +181,23 @@ export default function AboutPage() {
               
               <div className="space-y-4">
                 <div className="flex items-center">
-                  <MapPinIcon className="w-5 h-5 text-green-600 mr-3" />
-                  <div>
-                    <p className="font-medium text-gray-800">Address</p>
-                    <p className="text-gray-600">East Bay Area, California</p>
-                  </div>
+                                  <MapPinIcon className="w-5 h-5 text-gray-600 mr-3" />
+                <div>
+                  <p className="font-medium text-gray-800">Address</p>
+                  <p className="text-gray-600">East Bay Area, California</p>
                 </div>
-                
-                <div className="flex items-center">
-                  <EnvelopeIcon className="w-5 h-5 text-blue-600 mr-3" />
-                  <div>
-                    <p className="font-medium text-gray-800">Email</p>
-                    <p className="text-gray-600">info@eastbaymuslims.org</p>
-                  </div>
+              </div>
+              
+              <div className="flex items-center">
+                <EnvelopeIcon className="w-5 h-5 text-gray-600 mr-3" />
+                <div>
+                  <p className="font-medium text-gray-800">Email</p>
+                  <p className="text-gray-600">info@eastbaymuslims.org</p>
                 </div>
-                
-                <div className="flex items-center">
-                  <PhoneIcon className="w-5 h-5 text-purple-600 mr-3" />
+              </div>
+              
+              <div className="flex items-center">
+                <PhoneIcon className="w-5 h-5 text-gray-600 mr-3" />
                   <div>
                     <p className="font-medium text-gray-800">Phone</p>
                     <p className="text-gray-600">(510)-734-2458</p>
@@ -208,10 +208,10 @@ export default function AboutPage() {
               <div className="mt-8">
                 <h4 className="font-semibold text-gray-800 mb-4">Follow Us</h4>
                 <div className="flex space-x-4">
-                  <a href="#" className="text-blue-600 hover:text-blue-800">📘 Facebook</a>
-                  <a href="#" className="text-pink-600 hover:text-pink-800">📸 Instagram</a>
-                  <a href="#" className="text-blue-400 hover:text-blue-600">🐦 Twitter</a>
-                  <a href="#" className="text-red-600 hover:text-red-800">📺 YouTube</a>
+                  <a href="#" className="text-gray-700 hover:text-gray-900">📘 Facebook</a>
+                  <a href="#" className="text-gray-700 hover:text-gray-900">📸 Instagram</a>
+                  <a href="#" className="text-gray-700 hover:text-gray-900">🐦 Twitter</a>
+                  <a href="#" className="text-gray-700 hover:text-gray-900">📺 YouTube</a>
                 </div>
               </div>
             </div>
@@ -224,7 +224,7 @@ export default function AboutPage() {
                   <label className="block text-sm font-medium text-gray-700 mb-2">Name</label>
                   <input
                     type="text"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gray-500 focus:border-transparent"
                     placeholder="Your name"
                   />
                 </div>
@@ -233,7 +233,7 @@ export default function AboutPage() {
                   <label className="block text-sm font-medium text-gray-700 mb-2">Email</label>
                   <input
                     type="email"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gray-500 focus:border-transparent"
                     placeholder="your@email.com"
                   />
                 </div>
@@ -242,7 +242,7 @@ export default function AboutPage() {
                   <label className="block text-sm font-medium text-gray-700 mb-2">Subject</label>
                   <input
                     type="text"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gray-500 focus:border-transparent"
                     placeholder="Message subject"
                   />
                 </div>
@@ -251,14 +251,14 @@ export default function AboutPage() {
                   <label className="block text-sm font-medium text-gray-700 mb-2">Message</label>
                   <textarea
                     rows={4}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gray-500 focus:border-transparent"
                     placeholder="Your message..."
                   ></textarea>
                 </div>
                 
                 <button
                   type="submit"
-                  className="w-full bg-green-600 hover:bg-green-700 text-white py-3 rounded-lg font-medium transition-colors"
+                  className="w-full bg-gray-800 hover:bg-black text-white py-3 rounded-lg font-medium transition-colors"
                 >
                   Send Message
                 </button>
@@ -299,15 +299,15 @@ export default function AboutPage() {
               </div>
               
               <div className="flex flex-wrap gap-2 mb-6">
-                <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-sm">💳 PayPal</span>
-                <span className="bg-purple-600 text-white px-3 py-1 rounded-full text-sm">📱 Zelle</span>
-                <span className="bg-blue-500 text-white px-3 py-1 rounded-full text-sm">💰 Venmo</span>
-                <span className="bg-indigo-600 text-white px-3 py-1 rounded-full text-sm">🏦 Stripe</span>
+                <span className="bg-gray-700 text-white px-3 py-1 rounded-full text-sm">💳 PayPal</span>
+                <span className="bg-gray-700 text-white px-3 py-1 rounded-full text-sm">📱 Zelle</span>
+                <span className="bg-gray-700 text-white px-3 py-1 rounded-full text-sm">💰 Venmo</span>
+                <span className="bg-gray-700 text-white px-3 py-1 rounded-full text-sm">🏦 Stripe</span>
               </div>
               
               <Link
                 href="/about/donate"
-                className="block w-full bg-green-600 hover:bg-green-700 text-white py-3 rounded-lg font-medium transition-colors text-center"
+                className="block w-full bg-gray-800 hover:bg-black text-white py-3 rounded-lg font-medium transition-colors text-center"
               >
                 Donate Now
               </Link>
@@ -346,28 +346,28 @@ export default function AboutPage() {
       </section>
 
       {/* Call to Action */}
-      <section className="py-16 bg-gradient-to-r from-green-600 to-blue-600 text-white">
+      <section className="py-16 bg-gray-900 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold mb-6">Join Our Community</h2>
-          <p className="text-lg mb-8 text-green-100">
+          <p className="text-lg mb-8 text-gray-300">
             Whether you want to attend events, volunteer, or support our mission, there&apos;s a place for you in our community.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/events"
-              className="bg-white text-green-600 hover:bg-green-50 px-8 py-3 rounded-lg font-medium transition-colors"
+              className="bg-white text-gray-900 hover:bg-gray-100 px-8 py-3 rounded-lg font-medium transition-colors"
             >
               View Upcoming Events
             </Link>
             <Link
               href="/volunteer"
-              className="bg-green-500 hover:bg-green-400 text-white px-8 py-3 rounded-lg font-medium transition-colors"
+              className="bg-gray-700 hover:bg-gray-600 text-white px-8 py-3 rounded-lg font-medium transition-colors"
             >
               Volunteer with Us
             </Link>
             <Link
               href="/register"
-              className="bg-transparent border-2 border-white hover:bg-white hover:text-green-600 text-white px-8 py-3 rounded-lg font-medium transition-colors"
+              className="bg-transparent border-2 border-white hover:bg-white hover:text-gray-900 text-white px-8 py-3 rounded-lg font-medium transition-colors"
             >
               Register for Events
             </Link>
